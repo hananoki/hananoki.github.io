@@ -46,8 +46,12 @@ h3:not(.popover-title) {
 /*  letter-spacing: -2px;*/
 }
 h4 { font-weight: bold }
+h5 { font-weight: bold }
 
 hr.clearfix {clear: both; width: 100%; float: left}
+hr.style1{
+  border-top: 1px solid #8c8b8b;
+}
 
 /* colors */
 .bg-bootstrap { background-color: #563d7c }
