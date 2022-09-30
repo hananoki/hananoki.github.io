@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+</head>
+<title>hananoki.github.io</title>
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Nanum+Gothic|Roboto" rel="stylesheet" />
+<link href="../css/markdown7.css" rel="stylesheet"></link>
+<link href="../css/card.css" rel="stylesheet"></link>
+
+<body>
+
+<div id="container">
+
+<h4 id="section">2022-09-29</h4>
+<h1
+id="自分でspawnactorしたカメラがアクティブな表示にならない">自分でSpawnActorしたカメラがアクティブな表示にならない</h1>
+<h2 id="前提">前提</h2>
+<p>キャラクターにカメラを仕込まず、自分で継承した<code>CameraActor</code>を使いたい</p>
+<h2 id="起きた現象">起きた現象</h2>
+<p>自分のカメラをSpawnActor、しかし画面はデバックカメラのような感じで自分のカメラの描画にならない</p>
+<p><img src="img/20220930_03.png" /><br />
+<span style="font-size: 80%">｡oO(違う、そうじゃない)</span></p>
+<h2 id="対応">対応</h2>
+<ol type="1">
+<li><p><code>CameraActor</code>のプロパティで<code>オートプレイヤーアクティベーション</code>を設定してみる<br />
+デフォルトは<code>Disabled</code>になってる<br />
+<img src="img/20220930_01.png" /></p></li>
+<li><p><code>SetViewTarget</code>してみる<br />
+<img src="img/20220930_02.png" /></p></li>
+</ol>
+<p><code>1</code>でとりあえずOKだと思うけど、BPでサっと確認したい時は<code>2</code>の使うといいかも。</p>
+<h2 id="結果">結果</h2>
+<p><img src="img/20220930_04.png" /><br />
+<span style="font-size: 80%">｡oO( Yes I Do. )</span></p>
+<hr />
+<p><a href="../index.html">戻る</a></p>
+
+</div>
+
+</body>
+</html>

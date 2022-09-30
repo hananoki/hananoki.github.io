@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+</head>
+<title>hananoki.github.io</title>
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Nanum+Gothic|Roboto" rel="stylesheet" />
+<link href="../css/markdown7.css" rel="stylesheet"></link>
+<link href="../css/card.css" rel="stylesheet"></link>
+
+<body>
+
+<div id="container">
+
+<h4 id="section">2022-09-30</h4>
+<h1 id="delayノードのキャンセル-悩">Delayノードのキャンセル (悩)</h1>
+<h2 id="unreal-engine-forums">Unreal Engine Forums</h2>
+<p><code>2017年の情報なので最新バージョンとは異なる可能性があります</code></p>
+<p><a
+href="https://forums.unrealengine.com/t/how-to-cancel-a-delay/390197">How
+to Cancel a Delay</a></p>
+<h2 id="要約すると">要約すると</h2>
+<p><code>ブループリント</code>で<code>Deley</code>をキャンセル機能は標準で提供されていない。</p>
+<p>C++でキャンセルする機能を実装すればキャンセル出来る。<br />
+以下、フォーラムに投稿された処理コード。</p>
+<pre class="cpp"><code>void UNodeLibrary::CancelDelays(AActor *actor)
+{
+    if (actor == nullptr)
+        return;
+
+    actor-&gt;GetWorld()-&gt;GetLatentActionManager().RemoveActionsForObject(actor);
+}</code></pre>
+<p>見た感じ、<code>actor</code>に結びついた<code>LatentAction</code>を削除しているので、<code>Deley</code>以外もキャンセルされると思うので注意が必要。</p>
+<h2 id="おわりに">おわりに</h2>
+<p>上記を書き終わって、「よしこれは使えるかも」とか思いながらベビースタードデカイラーメン
+<span
+style="font-size: 150%"><strong>チキン味</strong></span>をボリボリしながら考えてたけど、あんま良くない気がする。<br />
+自分の把握してない場所とかで<code>LatentAction</code>されると困るというか、かといってキャンセル出来ない処理の場合、手の打ちようがないというか。</p>
+<p>ものは試しにやってみるとというのも…うーむ……良くなる気が全くしない。</p>
+<p><span style="font-size: 80%">｡oO( ボリボリッうめぇ )</span></p>
+<hr />
+<p><a href="../index.html">戻る</a></p>
+
+</div>
+
+</body>
+</html>
