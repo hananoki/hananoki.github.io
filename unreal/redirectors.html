@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+</head>
+<title>hananoki.github.io</title>
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Nanum+Gothic|Roboto" rel="stylesheet" />
+<link href="css/side.css" rel="stylesheet"></link>
+<link href="css/markdown7_side.css" rel="stylesheet"></link>
+
+<body>
+
+<article>
+<div class="side">
+<p><a href="memo.html">UE4関連のメモ</a><br />
+<a href="coding_standard.html">クラス名の接頭辞</a><br />
+<a href="redirectors.html">リダイレクタ</a><br />
+<a href="asset_naming.html">アセットのプレフィックス名</a><br />
+<a href="module.html">モジュール</a></p>
+</div> 
+<div class="content">
+<h1 id="リダイレクタ">リダイレクタ</h1>
+<p><a
+href="https://docs.unrealengine.com/4.27/ja/ProductionPipelines/Redirectors/">リダイレクタ</a><br />
+<a
+href="https://docs.unrealengine.com/4.27/ja/ProgrammingAndScripting/ProgrammingWithCPP/Assets/CoreRedirects/">Core
+Redirects</a></p>
+<h2 id="用途">用途</h2>
+<ul>
+<li>BPで継承したり使っている状態でC++で型名を変更すると、そのBPは使えなくなる</li>
+<li>変更前の名前と変更後の名前を記載することで回避できる</li>
+</ul>
+<h2 id="問題点">問題点</h2>
+<ol type="1">
+<li>リダイレクタの記載がどんどん溜まっていく</li>
+<li>↓のエディタ機能のリダイレクタ修正では修正出来ない<br />
+<img src="img/redirecter.png" /><br />
+</li>
+<li>一時的に解決してくれるだけなので、BP等使用しているアセットを改めて保存しなおさないといつまでも古い型名で参照し続ける</li>
+<li>何か変更して保存しないと実際に保存されない</li>
+</ol>
+<h2 id="参考">参考</h2>
+<p><a
+href="https://qiita.com/go_astrayer/items/d576b49ea748b2220699">ブループリントに公開した
+C++ クラス、関数などの名前のリネーム方法</a><br />
+<a href="https://historia.co.jp/archives/1028/">[UE4] リダイレクター
+～消えないゴミファイルの謎</a></p>
+<hr />
+<p><a href="../index.html">戻る</a></p>
+
+</div>
+</article>
+
+</body>
+</html>
