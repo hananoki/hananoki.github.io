@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+</head>
+<title>hananoki.github.io</title>
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Nanum+Gothic|Roboto" rel="stylesheet" />
+<link href="css/side.css" rel="stylesheet"></link>
+<link href="css/markdown7_side.css" rel="stylesheet"></link>
+
+<body>
+
+<article>
+<div class="side">
+<p><a href="index.html">はじめに</a></p>
+<p><a href="link.html">お役立ちリンク</a><br />
+<a href="coding_standard.html">クラス名の接頭辞</a><br />
+<a href="redirectors.html">リダイレクタ</a><br />
+<a href="asset_naming.html">アセットのプレフィックス名</a><br />
+<a href="module.html">モジュール</a><br />
+<a href="notes.html">雑記</a></p>
+</div> 
+<div class="content">
+<h1 id="雑記">雑記</h1>
+<h2 id="actor">Actor</h2>
+<ul>
+<li><code>SpawnActor</code>時に<code>BeginPlay</code>が呼ばれる
+<ul>
+<li><code>UGameplayStatics::BeginDeferredActorSpawnFromClass</code> ～
+<code>UGameplayStatics::FinishSpawningActor</code>は<code>FinishSpawningActor</code>時に呼ばれる</li>
+</ul></li>
+</ul>
+<h2 id="オブジェクトプーリング">オブジェクトプーリング</h2>
+<h3 id="uprojectilemovementcomponent">UProjectileMovementComponent</h3>
+<ul>
+<li>再スポーン時の処理
+<ul>
+<li><code>InitializeComponent</code>は一度しか呼んではいけない、呼ぶとクラッシュする</li>
+<li>移動方向の<code>Velocity</code>を直接初期化する</li>
+</ul></li>
+</ul>
+<h2 id="ラムダ式">ラムダ式</h2>
+<h3 id="キャプチャについて">キャプチャについて</h3>
+<p><a
+href="https://docs.unrealengine.com/4.27/ja/ProductionPipelines/DevelopmentSetup/CodingStandard/">コーディング規約</a>にある内容で注意すること</p>
+<blockquote>
+<p>ポインタの by-reference キャプチャと by-value キャプチャ (this
+ポインタを含む) は、lambda
+がキャプチャーした変数のコンテキスト外で実行されると間違ったダングリング参照の原因になることがあります。</p>
+</blockquote>
+<blockquote>
+<p>間違ってキャプチャーした UObject ポインタは、ガーベジ
+コレクターからは見えません。<br />
+[=] lambda
+がすべてに対して独自のコピーがあるような印象を与えますが、メンバ変数が参照されている場合、自動キャプチャは
+this を暗示的にキャプチャします。</p>
+</blockquote>
+<p>ざっくり考えると「キャプチャされる変数には<code>UPROPERTY</code>が付かないので気を付けてね」って感じ。</p>
+<ul>
+<li>ラムダ式をローカルスコープで一時的に使用する分には大丈夫と思われ</li>
+<li>ラムダ式をメンバに保持して使うのは無理</li>
+<li>メンバに保持したいような時はデリゲートを使う</li>
+</ul>
+<p>気を付けないとGC時に分からん挙動を誘発すると思うので、使用する際は慎重に。</p>
+<hr />
+<p><a href="../index.html">戻る</a></p>
+
+</div>
+</article>
+
+</body>
+</html>
