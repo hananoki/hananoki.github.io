@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+</head>
+<title>hananoki.github.io</title>
+<link href="../img/favicon.webp" rel="icon" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Nanum+Gothic|Roboto" rel="stylesheet" />
+<link href="../css/side.css" rel="stylesheet">
+<link href="../css/markdown7_side.css" rel="stylesheet">
+
+<body>
+
+<article>
+<div class="side">
+<a href="index.html">デスクトップアプリ</a><br>
+<br>
+<a href="nkf-gui.html">nkf-gui</a><br>
+<a href="vcpkg-gui.html">vcpkg-gui</a><br>
+<a href="uecpptool.html">UECPPTool</a><br>
+<a href="Utotribyu.html">Utotribyu</a><br>
+<a href="xtFOJP.html">xtFOJP</a><br>
+<br>
+<a href="etc.html">その他</a><br>
+</div> 
+<div class="content">
+<h1 id="xtfojp">xtFOJP</h1>
+<p>xTranslatorでFOJPの日本語化をサポートするツール</p>
+<p><span
+style="color: red"><strong>※MO2で管理していることが前提となりますのでご注意ください</strong></span></p>
+<ul>
+<li><a href="#ダウンロード">ダウンロード</a></li>
+<li><a href="#セットアップ">セットアップ</a></li>
+<li><a href="#基本的な使い方">基本的な使い方</a></li>
+<li><a href="#MCMな使い方">MCMな使い方</a></li>
+<li><a href="#出力して使う">出力して使う</a></li>
+<li><a href="#既存の翻訳ファイルをxTranslatorで使えるようにする">既存の翻訳ファイルをxTranslatorで使えるようにする</a></li>
+<li><a href="#未実装、作ってない部分">未実装、作ってない部分</a></li>
+</ul>
+<h2 id="ダウンロード">ダウンロード</h2>
+<p>64ビット版のみ</p>
+<p><a href="../arcive/xtFOJP-rev8.7z">xtFOJP-rev8.7z</a></p>
+<h2 id="セットアップ">セットアップ</h2>
+<p>ツールを起動したらまずは設定をしてください</p>
+<p><img src="img/xtFOJP01.webp" /></p>
+<p>うまく認識できればMO2のmodsフォルダ内のものが表示されます</p>
+<p><img src="img/xtFOJP02.webp" /></p>
+<ul>
+<li>「同じファイル名を発見しました」が出る場合、xTranslatorでエクスポート時のファイル名を注意する必要があります</li>
+</ul>
+<h2 id="基本的な使い方">基本的な使い方</h2>
+<p>フォルダをダブルクリックするとxTranslatorが立ち上がります</p>
+<p><video src="video/xtFOJP03.mp4" autoplay muted playsinline loop /></p>
+<p>プラグインが複数ある場合はツリーを展開して個別ファイルでダブルクリックします</p>
+<p><img src="img/xtFOJP_05.webp" /></p>
+<p>xmlエクスポート時の注意する点として、<span
+style="color: red"><strong>プラグインのファイル名を含むようにしてください</strong></span></p>
+<p><img src="img/xtFOJP_04.webp" /></p>
+<p>（基本的にはデフォルトのままでOKですが、一部esmとespが同名である場合などは注意）</p>
+<h2 id="mcmな使い方">MCMな使い方</h2>
+<p>MODフォルダにtranslationsフォルダを用意して「なんとか_en.txt」とするとツリーに表示されます。
+（プラグイン名_en.txtが推奨）</p>
+<p><img src="img/xtFOJP_06.webp" /></p>
+<p>ダブルクリックでプラグインと同じように立ち上がります</p>
+<p><video src="video/xtFOJP_MCM.mp4" autoplay muted playsinline loop /></p>
+<p>xmlエクスポート時の注意する点はプラグインの時と同様<span
+style="color: red"><strong>プラグインのファイル名が含むようにしてください</strong></span></p>
+<h2 id="出力して使う">出力して使う</h2>
+<ol type="1">
+<li>「変換」を実行するとexeと同じ階層に「txt」フォルダを作り中間結果を出力します</li>
+<li>全て変換が終わると設定で指定した「変換先フォルダ」に<code>xtFOJP_en.txt</code>と<code>xtFOJP_jp.txt</code>という風にまとめて出力されます</li>
+<li>fojp.xmlに読み込みの記述をします<br />
+<code>例　&lt;file jp="xtFOJP_jp.txt" en="xtFOJP_en.txt" /&gt;</code></li>
+</ol>
+<h3 id="注意点">注意点</h3>
+<ul>
+<li>自動で行う動作上プラグイン名に強く依存しています</li>
+<li>同名のesm、espでない限り、基本的にファイル名はツールのデフォルトのままで手動では入力しないほうが事故らないです</li>
+</ul>
+<h2
+id="既存の翻訳ファイルをxtranslatorで使えるようにする">既存の翻訳ファイルをxTranslatorで使えるようにする</h2>
+<ol type="1">
+<li>翻訳したいファイルをxTranslatorで開く</li>
+<li>一旦全て翻訳済みとしてxmlをエクスポートする</li>
+<li>FOJPインポート画面で翻訳ファイルをD&amp;D</li>
+<li>インポートを実行する</li>
+</ol>
+<p>これでxmlに取り込むことが出来ます。
+一旦全て翻訳済みとしているので必要に応じて未翻訳部分を破棄してください。</p>
+<p><video src="video/xtFOJP_IMPORT.mp4" autoplay muted playsinline loop /></p>
+<h2 id="未実装作ってない部分">未実装、作ってない部分</h2>
+<ul>
+<li>MOD表示画面でフォルダ名にあるチェックボックスは特に何もありません</li>
+<li>FOJPインポート画面の共通翻訳テキストは機能していません</li>
+</ul>
+<hr />
+<p><a href="index.html">戻る</a></p>
+
+</div>
+</article>
+
+</body>
+</html>

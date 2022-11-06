@@ -1,0 +1,5437 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+</head>
+<title>hananoki.github.io</title>
+<link href="../img/favicon.webp" rel="icon" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Nanum+Gothic|Roboto" rel="stylesheet" />
+<link href="../css/side.css" rel="stylesheet">
+<link href="../css/markdown7_side.css" rel="stylesheet">
+
+<body>
+
+<article>
+<div class="side">
+<p><a href="DIK.html">DIK</a></p>
+<p><a href="MediaInfo Inform.html">MediaInfo Inform</a></p>
+</div> 
+<div class="content">
+<h1 id="mediainfo-inform">MediaInfo Inform</h1>
+<ul>
+<li><a href="#general">General</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#audio">Audio</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#other">Other</a></li>
+<li><a href="#image">Image</a></li>
+<li><a href="#menu">Menu</a></li>
+</ul>
+<h2 id="general">General</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Count</td>
+<td>Count of objects available in this stream</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>Count of streams of that kind available</td>
+</tr>
+<tr class="odd">
+<td>StreamCount</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamKind</td>
+<td>Stream type name</td>
+</tr>
+<tr class="odd">
+<td>StreamKind/String</td>
+<td>Stream type name</td>
+</tr>
+<tr class="even">
+<td>StreamKindID</td>
+<td>Number of the stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>StreamKindPos</td>
+<td>When multiple streams, number of the stream (base=1)</td>
+</tr>
+<tr class="even">
+<td>StreamOrder</td>
+<td>Stream order in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>FirstPacketOrder</td>
+<td>Order of the first fully decodable packet met in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="even">
+<td>Inform</td>
+<td>Last **Inform** call</td>
+</tr>
+<tr class="odd">
+<td>ID</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>ID/String</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>UniqueID</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="even">
+<td>UniqueID/String</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="odd">
+<td>MenuID</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>MenuID/String</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>GeneralCount              </td>
+<td>Number of general streams</td>
+</tr>
+<tr class="even">
+<td>VideoCount</td>
+<td>Number of video streams</td>
+</tr>
+<tr class="odd">
+<td>AudioCount</td>
+<td>Number of audio streams</td>
+</tr>
+<tr class="even">
+<td>TextCount</td>
+<td>Number of text streams</td>
+</tr>
+<tr class="odd">
+<td>OtherCount</td>
+<td>Number of other streams</td>
+</tr>
+<tr class="even">
+<td>ImageCount</td>
+<td>Number of image streams</td>
+</tr>
+<tr class="odd">
+<td>MenuCount</td>
+<td>Number of menu streams</td>
+</tr>
+<tr class="even">
+<td>Video_Format_List</td>
+<td>Video Codecs in this file, separated by /</td>
+</tr>
+<tr class="odd">
+<td>Video_Format_WithHint_Lis</td>
+<td>Video Codecs in this file with popular name (hint), separated by /</td>
+</tr>
+<tr class="even">
+<td>Video_Codec_List</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Video_Language_List</td>
+<td>Video languagesin this file, full names, separated by /</td>
+</tr>
+<tr class="even">
+<td>Audio_Format_List</td>
+<td>Audio Codecs in this file,separated by /</td>
+</tr>
+<tr class="odd">
+<td>Audio_Format_WithHint_Lis</td>
+<td>Audio Codecs in this file with popular name (hint), separated by /</td>
+</tr>
+<tr class="even">
+<td>Audio_Codec_List</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Audio_Language_List</td>
+<td>Audio languages in this file separated by /</td>
+</tr>
+<tr class="even">
+<td>Text_Format_List</td>
+<td>Text Codecs in this file, separated by /</td>
+</tr>
+<tr class="odd">
+<td>Text_Format_WithHint_List</td>
+<td>Text Codecs in this file with popular name (hint),separated by /</td>
+</tr>
+<tr class="even">
+<td>Text_Codec_List</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Text_Language_List</td>
+<td>Text languages in this file, separated by /</td>
+</tr>
+<tr class="even">
+<td>Other_Format_List</td>
+<td>Other formats in this file, separated by /</td>
+</tr>
+<tr class="odd">
+<td>Other_Format_WithHint_Lis</td>
+<td>Other formats in this file with popular name (hint), separated by /</td>
+</tr>
+<tr class="even">
+<td>Other_Codec_List</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Other_Language_List</td>
+<td>Chapters languages in this file, separated by /</td>
+</tr>
+<tr class="even">
+<td>Image_Format_List</td>
+<td>Image Codecs in this file, separated by /</td>
+</tr>
+<tr class="odd">
+<td>Image_Format_WithHint_Lis</td>
+<td>Image Codecs in this file with popular name (hint), separated by /</td>
+</tr>
+<tr class="even">
+<td>Image_Codec_List</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Image_Language_List</td>
+<td>Image languages in this file, separated by /</td>
+</tr>
+<tr class="even">
+<td>Menu_Format_List</td>
+<td>Menu Codecsin this file, separated by /</td>
+</tr>
+<tr class="odd">
+<td>Menu_Format_WithHint_List</td>
+<td>Menu Codecs in this file with popular name (hint),separated by /</td>
+</tr>
+<tr class="even">
+<td>Menu_Codec_List</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Menu_Language_List</td>
+<td>Menu languages in this file, separated by /</td>
+</tr>
+<tr class="even">
+<td>CompleteName</td>
+<td>Complete name (Folder+Name+Extension)</td>
+</tr>
+<tr class="odd">
+<td>FolderName</td>
+<td>Folder name only</td>
+</tr>
+<tr class="even">
+<td>FileName</td>
+<td>File name only</td>
+</tr>
+<tr class="odd">
+<td>FileExtension</td>
+<td>File extension only</td>
+</tr>
+<tr class="even">
+<td>CompleteName_Last</td>
+<td>Complete name (Folder+Name+Extension) of the last file (in the case of a sequence of files)</td>
+</tr>
+<tr class="odd">
+<td>FolderName_Last</td>
+<td>Folder name only of the last file (in the case of a sequence of files)</td>
+</tr>
+<tr class="even">
+<td>FileName_Last</td>
+<td>File name only of the last file (in the case of a sequence of files)</td>
+</tr>
+<tr class="odd">
+<td>FileExtension_Last</td>
+<td>File extension only of the last file (in the case of a sequence of files)</td>
+</tr>
+<tr class="even">
+<td>Format</td>
+<td>Format used</td>
+</tr>
+<tr class="odd">
+<td>Format/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Format/Info</td>
+<td>Info about this Format</td>
+</tr>
+<tr class="odd">
+<td>Format/Url</td>
+<td>Link to a description of this format</td>
+</tr>
+<tr class="even">
+<td>Format/Extensions</td>
+<td>Known extensions of this format</td>
+</tr>
+<tr class="odd">
+<td>Format_Commercial</td>
+<td>Commercial name used by vendor for theses setings or Format field if there is no difference</td>
+</tr>
+<tr class="even">
+<td>Format_Commercial_IfAny</td>
+<td>Commercial name used by vendor for theses setings if there is one</td>
+</tr>
+<tr class="odd">
+<td>Format_Version</td>
+<td>Version of this format</td>
+</tr>
+<tr class="even">
+<td>Format_Profile</td>
+<td>Profile of the Format</td>
+</tr>
+<tr class="odd">
+<td>Format_Compression</td>
+<td>Compression method used</td>
+</tr>
+<tr class="even">
+<td>Format_Settings</td>
+<td>Settings needed for decoder used</td>
+</tr>
+<tr class="odd">
+<td>InternetMediaType</td>
+<td>Internet Media Type (aka MIME Type, Content-Type)</td>
+</tr>
+<tr class="even">
+<td>CodecID</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="odd">
+<td>CodecID/String</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="even">
+<td>CodecID/Info</td>
+<td>Info about this codec</td>
+</tr>
+<tr class="odd">
+<td>CodecID/Hint</td>
+<td>A hint/popular name for this codec</td>
+</tr>
+<tr class="even">
+<td>CodecID/Url</td>
+<td>A link to more details about this codec ID</td>
+</tr>
+<tr class="odd">
+<td>CodecID_Description</td>
+<td>Manual description given by the container</td>
+</tr>
+<tr class="even">
+<td>Interleaved</td>
+<td>If Audio and video are muxed</td>
+</tr>
+<tr class="odd">
+<td>Codec</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec/Info</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec/Url</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec/Extensions</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Settings</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Settings_Automatic</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>FileSize</td>
+<td>File size in bytes</td>
+</tr>
+<tr class="odd">
+<td>FileSize/String</td>
+<td>File size (with measure)</td>
+</tr>
+<tr class="even">
+<td>FileSize/String1</td>
+<td>File size (with measure, 1 digit mini)</td>
+</tr>
+<tr class="odd">
+<td>FileSize/String2</td>
+<td>File size (with measure, 2 digit mini)</td>
+</tr>
+<tr class="even">
+<td>FileSize/String3</td>
+<td>File size (with measure, 3 digit mini)</td>
+</tr>
+<tr class="odd">
+<td>FileSize/String4</td>
+<td>File size (with measure, 4 digit mini)</td>
+</tr>
+<tr class="even">
+<td>Duration</td>
+<td>Play time of the stream in ms</td>
+</tr>
+<tr class="odd">
+<td>Duration/String</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration/String1</td>
+<td>Play time in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration/String2</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration/String3</td>
+<td>Play time in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Duration/String4</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Duration/String5</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Duration_Start</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Duration_End</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>OverallBitRate_Mode</td>
+<td>Bit rate mode of all streams (VBR, CBR)</td>
+</tr>
+<tr class="even">
+<td>OverallBitRate_Mode/Strin</td>
+<td>Bit rate mode of all streams (Variable, Constant)</td>
+</tr>
+<tr class="odd">
+<td>OverallBitRate</td>
+<td>Bit rate of all streams in bps</td>
+</tr>
+<tr class="even">
+<td>OverallBitRate/String</td>
+<td>Bit rate of all streams (with measure)</td>
+</tr>
+<tr class="odd">
+<td>OverallBitRate_Minimum</td>
+<td>Minimum Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>OverallBitRate_Minimum/St</td>
+<td>Minimum Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>OverallBitRate_Nominal</td>
+<td>Nominal Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>OverallBitRate_Nominal/St</td>
+<td>Nominal Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>OverallBitRate_Maximum</td>
+<td>Maximum Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>OverallBitRate_Maximum/St</td>
+<td>Maximum Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>FrameRate</td>
+<td>Frames per second</td>
+</tr>
+<tr class="even">
+<td>FrameRate/String</td>
+<td>Frames per second (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>FrameCount</td>
+<td>Frame count (a frame contains a count of samples depends of the format)</td>
+</tr>
+<tr class="even">
+<td>Delay</td>
+<td>Delay fixed in the stream (relative) IN MS</td>
+</tr>
+<tr class="odd">
+<td>Delay/String</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay/String1</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay/String2</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay/String3</td>
+<td>format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Delay/String4</td>
+<td>Delay in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Delay/String5</td>
+<td>Delay in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Delay_Settings</td>
+<td>Delay settings (in case of timecode for example)</td>
+</tr>
+<tr class="even">
+<td>Delay_DropFrame</td>
+<td>Delay drop frame</td>
+</tr>
+<tr class="odd">
+<td>Delay_Source</td>
+<td>Delay source (Container or Stream or empty)</td>
+</tr>
+<tr class="even">
+<td>Delay_Source/String</td>
+<td>Delay source (Container or Stream or empty)</td>
+</tr>
+<tr class="odd">
+<td>StreamSize</td>
+<td>Stream size in bytes</td>
+</tr>
+<tr class="even">
+<td>StreamSize/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String5</td>
+<td>With proportion</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Proportion</td>
+<td>Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>HeaderSize</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>DataSize</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FooterSize</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>IsStreamable</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Album_ReplayGain_Gain</td>
+<td>The gain to apply to reach 89dB SPL on playback</td>
+</tr>
+<tr class="even">
+<td>Album_ReplayGain_Gain/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Album_ReplayGain_Peak</td>
+<td>The maximum absolute peak value of the item</td>
+</tr>
+<tr class="even">
+<td>Encryption</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Encryption_Format</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Encryption_Length</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Encryption_Method</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Encryption_Mode</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Encryption_Padding</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Encryption_InitializationVector</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>(Generic)Title of file</td>
+</tr>
+<tr class="even">
+<td>Title/More</td>
+<td>(Generic)More info about the title of file</td>
+</tr>
+<tr class="odd">
+<td>Title/Url</td>
+<td>(Generic)Url</td>
+</tr>
+<tr class="even">
+<td>Domain</td>
+<td>Univers movies belong to, e.g. Starwars, Stargate, Buffy, Dragonballs</td>
+</tr>
+<tr class="odd">
+<td>Collection</td>
+<td>Name of the series, e.g. Starwars movies, Stargate SG-1, Stargate Atlantis, Buffy, Angel</td>
+</tr>
+<tr class="even">
+<td>Season</td>
+<td>Name of the season, e.g. Strawars first Trilogy, Season 1</td>
+</tr>
+<tr class="odd">
+<td>Season_Position</td>
+<td>Number of the Season</td>
+</tr>
+<tr class="even">
+<td>Season_Position_Total</td>
+<td>Place of the season e.g. 2 of 7</td>
+</tr>
+<tr class="odd">
+<td>Movie</td>
+<td>Name of the movie. Eg : Starwars, a new hope</td>
+</tr>
+<tr class="even">
+<td>Movie/More</td>
+<td>More infos about the movie</td>
+</tr>
+<tr class="odd">
+<td>Movie/Country</td>
+<td>Country, where the movie was procuced</td>
+</tr>
+<tr class="even">
+<td>Movie/Url</td>
+<td>Homepage for the movie</td>
+</tr>
+<tr class="odd">
+<td>Album</td>
+<td>Name of an audio-album. Eg : The joshua tree</td>
+</tr>
+<tr class="even">
+<td>Album/More</td>
+<td>More infos about the album</td>
+</tr>
+<tr class="odd">
+<td>Album/Sort</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Album/Performer</td>
+<td>Album performer/artist of this file</td>
+</tr>
+<tr class="odd">
+<td>Album/Performer/Sort</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Album/Performer/Url</td>
+<td>Homepage of the album performer/artist</td>
+</tr>
+<tr class="odd">
+<td>Comic</td>
+<td>Name of the comic.</td>
+</tr>
+<tr class="even">
+<td>Comic/More</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Comic/Position_Total</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Part</td>
+<td>Name of the part. e.g. CD1, CD2</td>
+</tr>
+<tr class="odd">
+<td>Part/Position</td>
+<td>Number of the part</td>
+</tr>
+<tr class="even">
+<td>Part/Position_Total</td>
+<td>Place of the part e.g. 2 of 3</td>
+</tr>
+<tr class="odd">
+<td>Track</td>
+<td>Name of the track. e.g. track1, track 2</td>
+</tr>
+<tr class="even">
+<td>Track/More</td>
+<td>More infos about the track</td>
+</tr>
+<tr class="odd">
+<td>Track/Url</td>
+<td>Link to a site about this track</td>
+</tr>
+<tr class="even">
+<td>Track/Sort</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Track/Position</td>
+<td>Number of this track</td>
+</tr>
+<tr class="even">
+<td>Track/Position_Total</td>
+<td>Place of this track, e.g. 3 of 15</td>
+</tr>
+<tr class="odd">
+<td>Grouping</td>
+<td>iTunes grouping</td>
+</tr>
+<tr class="even">
+<td>Chapter</td>
+<td>Name of the chapter.</td>
+</tr>
+<tr class="odd">
+<td>SubTrack</td>
+<td>Name of the subtrack.</td>
+</tr>
+<tr class="even">
+<td>Original/Album</td>
+<td>Original name of album, serie...</td>
+</tr>
+<tr class="odd">
+<td>Original/Movie</td>
+<td>Original name of the movie</td>
+</tr>
+<tr class="even">
+<td>Original/Part</td>
+<td>Original name of the part in the original support</td>
+</tr>
+<tr class="odd">
+<td>Original/Track</td>
+<td>Original name of the track in the original support</td>
+</tr>
+<tr class="even">
+<td>Compilation</td>
+<td>iTunes compilation</td>
+</tr>
+<tr class="odd">
+<td>Compilation/String</td>
+<td>iTunes compilation</td>
+</tr>
+<tr class="even">
+<td>Performer</td>
+<td>Main performer/artist of this file</td>
+</tr>
+<tr class="odd">
+<td>Performer/Sort</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Performer/Url</td>
+<td>Homepage of the performer/artist</td>
+</tr>
+<tr class="odd">
+<td>Original/Performer</td>
+<td>Original artist(s)/performer(s).</td>
+</tr>
+<tr class="even">
+<td>Accompaniment</td>
+<td>Band/orchestra/accompaniment/musician.</td>
+</tr>
+<tr class="odd">
+<td>Composer</td>
+<td>Name of the original composer.</td>
+</tr>
+<tr class="even">
+<td>Composer/Nationality</td>
+<td>Nationality of the main composer of the item, mostly for classical music.</td>
+</tr>
+<tr class="odd">
+<td>Arranger</td>
+<td>The person who arranged the piece. e.g. Ravel.</td>
+</tr>
+<tr class="even">
+<td>Lyricist</td>
+<td>The person who wrote the lyrics for a musical item.</td>
+</tr>
+<tr class="odd">
+<td>Original/Lyricist</td>
+<td>Original lyricist(s)/text writer(s).</td>
+</tr>
+<tr class="even">
+<td>Conductor</td>
+<td>The artist(s) who performed the work. In classical music this would be the conductor, orchestra, soloists.</td>
+</tr>
+<tr class="odd">
+<td>Director</td>
+<td>Name of the director.</td>
+</tr>
+<tr class="even">
+<td>CoDirector</td>
+<td>Name of the codirector.</td>
+</tr>
+<tr class="odd">
+<td>AssistantDirector</td>
+<td>Name of the assistant director.</td>
+</tr>
+<tr class="even">
+<td>DirectorOfPhotography</td>
+<td>The name of the director of photography, also known as cinematographer.</td>
+</tr>
+<tr class="odd">
+<td>SoundEngineer</td>
+<td>The name of the sound engineer or sound recordist.</td>
+</tr>
+<tr class="even">
+<td>ArtDirector</td>
+<td>The person who oversees the artists and craftspeople who build the sets.</td>
+</tr>
+<tr class="odd">
+<td>ProductionDesigner</td>
+<td>The person responsible for designing the Overall visual appearance of a movie.</td>
+</tr>
+<tr class="even">
+<td>Choregrapher</td>
+<td>The name of the choregrapher.</td>
+</tr>
+<tr class="odd">
+<td>CostumeDesigner</td>
+<td>The name of the costume designer.</td>
+</tr>
+<tr class="even">
+<td>Actor</td>
+<td>Real name of an actor or actress playing a role in the movie.</td>
+</tr>
+<tr class="odd">
+<td>Actor_Character</td>
+<td>Name of the character an actor or actress plays in this movie.</td>
+</tr>
+<tr class="even">
+<td>WrittenBy</td>
+<td>The author of the story or script.</td>
+</tr>
+<tr class="odd">
+<td>ScreenplayBy</td>
+<td>The author of the screenplay or scenario (used for movies and TV shows).</td>
+</tr>
+<tr class="even">
+<td>EditedBy</td>
+<td>Editors name</td>
+</tr>
+<tr class="odd">
+<td>CommissionedBy</td>
+<td>name of the person or organization that commissioned the subject of the file</td>
+</tr>
+<tr class="even">
+<td>Producer</td>
+<td>Name of the producer of the movie.</td>
+</tr>
+<tr class="odd">
+<td>CoProducer</td>
+<td>The name of a co-producer.</td>
+</tr>
+<tr class="even">
+<td>ExecutiveProducer</td>
+<td>The name of an executive producer.</td>
+</tr>
+<tr class="odd">
+<td>MusicBy</td>
+<td>Main music-artist for a movie</td>
+</tr>
+<tr class="even">
+<td>DistributedBy</td>
+<td>Company the item is mainly distributed by</td>
+</tr>
+<tr class="odd">
+<td>OriginalSourceForm/Distri</td>
+<td>Name of the person or organization who supplied the original subject</td>
+</tr>
+<tr class="even">
+<td>MasteredBy</td>
+<td>The engineer who mastered the content for a physical medium or for digital distribution.</td>
+</tr>
+<tr class="odd">
+<td>EncodedBy</td>
+<td>Name of the person or organisation that encoded/ripped the audio file.</td>
+</tr>
+<tr class="even">
+<td>RemixedBy</td>
+<td>Name of the artist(s), that interpreted, remixed, or otherwise modified the item.</td>
+</tr>
+<tr class="odd">
+<td>ProductionStudio</td>
+<td>Main production studio</td>
+</tr>
+<tr class="even">
+<td>ThanksTo</td>
+<td>A very general tag for everyone else that wants to be listed.</td>
+</tr>
+<tr class="odd">
+<td>Publisher</td>
+<td>Name of the organization publishing the album (i.e. the 'record label') or movie.</td>
+</tr>
+<tr class="even">
+<td>Publisher/URL</td>
+<td>Publishers official webpage.</td>
+</tr>
+<tr class="odd">
+<td>Label</td>
+<td>Brand or trademark associated with the marketing of music recordings and music videos.</td>
+</tr>
+<tr class="even">
+<td>Genre</td>
+<td>The main genre of the audio or video. e.g. classical, ambient-house, synthpop, sci-fi, drama, etc.</td>
+</tr>
+<tr class="odd">
+<td>Mood</td>
+<td>Intended to reflect the mood of the item with a few keywords, e.g. Romantic, Sad, Uplifting, etc.</td>
+</tr>
+<tr class="even">
+<td>ContentType</td>
+<td>The type of the item. e.g. Documentary, Feature Film, Cartoon, Music Video, Music, Sound FX, etc.</td>
+</tr>
+<tr class="odd">
+<td>Subject</td>
+<td>Describes the topic of the file, such as Aerial view of Seattle..</td>
+</tr>
+<tr class="even">
+<td>Description</td>
+<td>A short description of the contents, such as Two birds flying.</td>
+</tr>
+<tr class="odd">
+<td>Keywords</td>
+<td>Keywords to the item separated by a comma, used for searching.</td>
+</tr>
+<tr class="even">
+<td>Summary</td>
+<td>A plot outline or a summary of the story.</td>
+</tr>
+<tr class="odd">
+<td>Synopsis</td>
+<td>A description of the story line of the item.</td>
+</tr>
+<tr class="even">
+<td>Period</td>
+<td>Describes the period that the piece is from or about. e.g. Renaissance.</td>
+</tr>
+<tr class="odd">
+<td>LawRating</td>
+<td>Depending on the country it's the format of the rating of a movie (P, R, X in the USA, an age in other countries or a URI defining a logo).</td>
+</tr>
+<tr class="even">
+<td>LawRating_Reason</td>
+<td>Reason for the law rating</td>
+</tr>
+<tr class="odd">
+<td>ICRA</td>
+<td>The ICRA rating. (Previously RSACi)</td>
+</tr>
+<tr class="even">
+<td>Released_Date</td>
+<td>The date/year that the item was released.</td>
+</tr>
+<tr class="odd">
+<td>Original/Released_Date</td>
+<td>The date/year that the item was originaly released.</td>
+</tr>
+<tr class="even">
+<td>Recorded_Date</td>
+<td>The time/date/year that the recording began.</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Date</td>
+<td>The time/date/year that the encoding of this item was completed began.</td>
+</tr>
+<tr class="even">
+<td>Tagged_Date</td>
+<td>The time/date/year that the tags were done for this item.</td>
+</tr>
+<tr class="odd">
+<td>Written_Date</td>
+<td>The time/date/year that the composition of the music/script began.</td>
+</tr>
+<tr class="even">
+<td>Mastered_Date</td>
+<td>The time/date/year that the item was tranfered to a digitalmedium.</td>
+</tr>
+<tr class="odd">
+<td>File_Created_Date</td>
+<td>The time that the file was created on the file system</td>
+</tr>
+<tr class="even">
+<td>File_Created_Date_Local</td>
+<td>The time that the file was created on the file system (Warning: this field depends of local configuration, do not use it in an international database)</td>
+</tr>
+<tr class="odd">
+<td>File_Modified_Date</td>
+<td>The time that the file was modified on the file system</td>
+</tr>
+<tr class="even">
+<td>File_Modified_Date_Local</td>
+<td>The time that the file was modified on the file system (Warning: this field depends of local configuration, do not use it in an international database)</td>
+</tr>
+<tr class="odd">
+<td>Recorded_Location</td>
+<td>Location where track was recorded. (See COMPOSITION_LOCATION for format)</td>
+</tr>
+<tr class="even">
+<td>Written_Location</td>
+<td>Location that the item was originaly designed/written. Information should be stored in the following format: country code, state/province, city where the coutry code is the same 2 octets as in Internet domains, or possibly ISO-3166. e.g. US, Texas, Austin or US, , Austin.</td>
+</tr>
+<tr class="odd">
+<td>Archival_Location</td>
+<td>Location, where an item is archived, e.eg. Louvre,Paris,France</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application/Strin</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit, trying to have the format 'CompanyName ProductName (OperatingSystem) Version (Date)'</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application_Compa</td>
+<td>Name of the company</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application_Name</td>
+<td>Name of the product</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application_Versi</td>
+<td>Version of the product</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application_Url</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit.</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library</td>
+<td>Software used to create the file</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library/String</td>
+<td>Software used to create the file, trying to have the format 'CompanyName ProductName (OperatingSystem) Version (Date)'</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_CompanyNa</td>
+<td>Name of the company</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_Name</td>
+<td>Name of the the encoding-software</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_Version</td>
+<td>Version of encoding-software</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_Date</td>
+<td>Release date of software</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_Settings</td>
+<td>Parameters used by the software</td>
+</tr>
+<tr class="odd">
+<td>Encoded_OperatingSystem</td>
+<td>Operating System of encoding-software</td>
+</tr>
+<tr class="even">
+<td>Cropped</td>
+<td>Describes whether an image has been cropped and, if so, how it was cropped.</td>
+</tr>
+<tr class="odd">
+<td>Dimensions</td>
+<td>Specifies the size of the original subject of the file. eg 8.5 in h, 11 in w</td>
+</tr>
+<tr class="even">
+<td>DotsPerInch</td>
+<td>Stores dots per inch setting of the digitizer used to produce the file</td>
+</tr>
+<tr class="odd">
+<td>Lightness</td>
+<td>Describes the changes in lightness settings on the digitizer required to produce the file</td>
+</tr>
+<tr class="even">
+<td>OriginalSourceMedium</td>
+<td>Original medium of the material, e.g. vinyl, Audio-CD, Super8 or BetaMax</td>
+</tr>
+<tr class="odd">
+<td>OriginalSourceForm</td>
+<td>Original form of the material, e.g. slide, paper, map</td>
+</tr>
+<tr class="even">
+<td>OriginalSourceForm/NumCol</td>
+<td>Number of colors requested when digitizing, e.g. 256 for images or 32 bit RGB for video</td>
+</tr>
+<tr class="odd">
+<td>OriginalSourceForm/Name</td>
+<td>Name of the product the file was originally intended for</td>
+</tr>
+<tr class="even">
+<td>OriginalSourceForm/Croppe</td>
+<td>Describes whether an image has been cropped and, if so, how it was cropped. e.g. 16:9 to 4:3, top and bottom</td>
+</tr>
+<tr class="odd">
+<td>OriginalSourceForm/Sharpn</td>
+<td>Identifies the changes in sharpness for the digitizer requiered to produce the file</td>
+</tr>
+<tr class="even">
+<td>Tagged_Application</td>
+<td>Software used to tag this file</td>
+</tr>
+<tr class="odd">
+<td>BPM</td>
+<td>Average number of beats per minute</td>
+</tr>
+<tr class="even">
+<td>ISRC</td>
+<td>International Standard Recording Code, excluding the ISRC prefix and including hyphens.</td>
+</tr>
+<tr class="odd">
+<td>ISBN</td>
+<td>International Standard Book Number.</td>
+</tr>
+<tr class="even">
+<td>BarCode</td>
+<td>EAN-13 (13-digit European Article Numbering) or UPC-A (12-digit Universal Product Code) bar code identifier.</td>
+</tr>
+<tr class="odd">
+<td>LCCN</td>
+<td>Library of Congress Control Number.</td>
+</tr>
+<tr class="even">
+<td>CatalogNumber</td>
+<td>A label-specific catalogue number used to identify the release. e.g. TIC 01.</td>
+</tr>
+<tr class="odd">
+<td>LabelCode</td>
+<td>A 4-digit or 5-digit number to identify the record label, typically printed as (LC) xxxx or (LC) 0xxxx on CDs medias or covers, with only the number being stored.</td>
+</tr>
+<tr class="even">
+<td>Owner</td>
+<td>Owner of the file</td>
+</tr>
+<tr class="odd">
+<td>Copyright</td>
+<td>Copyright attribution.</td>
+</tr>
+<tr class="even">
+<td>Copyright/Url</td>
+<td>Link to a site with copyright/legal information.</td>
+</tr>
+<tr class="odd">
+<td>Producer_Copyright</td>
+<td>The copyright information as per the productioncopyright holder.</td>
+</tr>
+<tr class="even">
+<td>TermsOfUse</td>
+<td>License information, e.g., All Rights Reserved,Any Use Permitted.</td>
+</tr>
+<tr class="odd">
+<td>ServiceName</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ServiceChannel</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Service/Url</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ServiceProvider</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ServiceProviderr/Url</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ServiceType</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>NetworkName</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>OriginalNetworkName</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Country</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>TimeZone</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cover</td>
+<td>Is there a cover</td>
+</tr>
+<tr class="even">
+<td>Cover_Description</td>
+<td>short descriptio, e.g. Earth in space</td>
+</tr>
+<tr class="odd">
+<td>Cover_Type</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cover_Mime</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Cover_Data</td>
+<td>Cover, in binary format encoded BASE64</td>
+</tr>
+<tr class="even">
+<td>Lyrics</td>
+<td>Text of a song</td>
+</tr>
+<tr class="odd">
+<td>Comment</td>
+<td>Any comment related to the content.</td>
+</tr>
+<tr class="even">
+<td>Rating</td>
+<td>A numeric value defining how much a person likes the song/movie. The number is between 0 and 5 with decimal values possible (e.g. 2.7), 5(.0) being the highest possible rating.</td>
+</tr>
+<tr class="odd">
+<td>Added_Date</td>
+<td>Date/year the item was added to the owners collection</td>
+</tr>
+<tr class="even">
+<td>Played_First_Date</td>
+<td>The date, the owner first played an item</td>
+</tr>
+<tr class="odd">
+<td>Played_Last_Date</td>
+<td>The date, the owner last played an item</td>
+</tr>
+<tr class="even">
+<td>Played_Count</td>
+<td>Number of times an item was played</td>
+</tr>
+<tr class="odd">
+<td>EPG_Positions_Begin</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>EPG_Positions_End</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="video">Video</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Count</td>
+<td>Count of objects available in this stream</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>bit field (0=IsAccepted, 1=IsFilled, 2=IsUpdated, 3=IsFinished)</td>
+</tr>
+<tr class="odd">
+<td>StreamCount</td>
+<td>Count of streams of that kind available</td>
+</tr>
+<tr class="even">
+<td>StreamKind</td>
+<td>Stream type name</td>
+</tr>
+<tr class="odd">
+<td>StreamKind/String</td>
+<td>Stream type name</td>
+</tr>
+<tr class="even">
+<td>StreamKindID</td>
+<td>Number of the stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>StreamKindPos</td>
+<td>When multiple streams, number of the stream (base=1)</td>
+</tr>
+<tr class="even">
+<td>StreamOrder</td>
+<td>Stream order in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>FirstPacketOrder</td>
+<td>Order of the first fully decodable packet met in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="even">
+<td>Inform</td>
+<td>Last **Inform** call</td>
+</tr>
+<tr class="odd">
+<td>ID</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>ID/String</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>UniqueID</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="even">
+<td>UniqueID/String</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="odd">
+<td>MenuID</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>MenuID/String</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>Format</td>
+<td>Format used</td>
+</tr>
+<tr class="even">
+<td>Format/Info</td>
+<td>Info about Format</td>
+</tr>
+<tr class="odd">
+<td>Format/Url</td>
+<td>Link</td>
+</tr>
+<tr class="even">
+<td>Format_Commercial</td>
+<td>Commercial name used by vendor for theses setings or Format field if there is no difference</td>
+</tr>
+<tr class="odd">
+<td>Format_Commercial_IfAny</td>
+<td>Commercial name used by vendor for theses setings if there is one</td>
+</tr>
+<tr class="even">
+<td>Format_Version</td>
+<td>Version of this format</td>
+</tr>
+<tr class="odd">
+<td>Format_Profile</td>
+<td>Profile of the Format</td>
+</tr>
+<tr class="even">
+<td>Format_Compression</td>
+<td>Compression mode of the Format</td>
+</tr>
+<tr class="odd">
+<td>MultiView_BaseProfile</td>
+<td>Multiview, profile of the base stream</td>
+</tr>
+<tr class="even">
+<td>MultiView_Count</td>
+<td>Multiview, count of views</td>
+</tr>
+<tr class="odd">
+<td>MultiView_Layout</td>
+<td>Multiview, how views are muxed in the container in case of it is not muxing in the stream</td>
+</tr>
+<tr class="even">
+<td>Format_Settings</td>
+<td>Settings needed for decoder used, summary</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_BVOP</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_BVOP/Stri</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_QPel</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_QPel/Stri</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_GMC</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_GMC/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_Matrix</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_Matrix/St</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_Matrix_Da</td>
+<td>Matrix, in binary format encoded BASE64. Order = intra, non-intra, gray intra, gray non-intra</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_CABAC</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_CABAC/Str</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_RefFrames</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_RefFrames</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_Pulldown</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_FrameMode</td>
+<td>Settings needed for decoder used, detailled</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_GOP</td>
+<td>Settings needed for decoder used, detailled (M=x N=y)</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_PictureSt</td>
+<td>Settings needed for decoder used, detailled (Type of frame, and field/frame info)</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_Wrapping</td>
+<td>Wrapping mode (Frame wrapped or Clip wrapped)</td>
+</tr>
+<tr class="odd">
+<td>InternetMediaType</td>
+<td>Internet Media Type (aka MIME Type, Content-Type)</td>
+</tr>
+<tr class="even">
+<td>MuxingMode</td>
+<td>How this file is muxed in the container</td>
+</tr>
+<tr class="odd">
+<td>CodecID</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="even">
+<td>CodecID/String</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="odd">
+<td>CodecID/Info</td>
+<td>Info on the codec</td>
+</tr>
+<tr class="even">
+<td>CodecID/Hint</td>
+<td>Hint/popular name for this codec</td>
+</tr>
+<tr class="odd">
+<td>CodecID/Url</td>
+<td>Homepage for more details about this codec</td>
+</tr>
+<tr class="even">
+<td>CodecID_Description</td>
+<td>Manual description given by the container</td>
+</tr>
+<tr class="odd">
+<td>Codec</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec/Family</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec/Info</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec/Url</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec/CC</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Profile</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Description</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Settings</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Settings_PacketBitS</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Settings_BVOP</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Settings_QPel</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Settings_GMC</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Settings_GMC/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Settings_Matrix</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Settings_Matrix_Dat</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Settings_CABAC</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Settings_RefFrames</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Duration</td>
+<td>Play time of the stream in ms</td>
+</tr>
+<tr class="even">
+<td>Duration/String</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration/String1</td>
+<td>Play time in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration/String2</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration/String3</td>
+<td>Play time in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Duration/String4</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Duration/String5</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame</td>
+<td>Duration of the first frame if it is longer than others, in ms</td>
+</tr>
+<tr class="odd">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Duration_FirstFrame/Strin</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame/Strin</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame</td>
+<td>Duration of the last frame if it is longer than others, in ms</td>
+</tr>
+<tr class="even">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Duration_LastFrame/String</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame/String</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Source_Duration</td>
+<td>Source Play time of the stream, in ms</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration/String</td>
+<td>Source Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration/String1</td>
+<td>Source Play time in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration/String2</td>
+<td>Source Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration/String3</td>
+<td>Source Play time in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration/String4</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Source_Duration/String5</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in ms</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_FirstFram</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in ms</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_LastFrame</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Mode</td>
+<td>Bit rate mode (VBR, CBR)</td>
+</tr>
+<tr class="even">
+<td>BitRate_Mode/String</td>
+<td>Bit rate mode (Variable, Cconstant)</td>
+</tr>
+<tr class="odd">
+<td>BitRate</td>
+<td>Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>BitRate/String</td>
+<td>Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Minimum</td>
+<td>Minimum Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>BitRate_Minimum/String</td>
+<td>Minimum Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Nominal</td>
+<td>Nominal Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>BitRate_Nominal/String</td>
+<td>Nominal Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Maximum</td>
+<td>Maximum Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>BitRate_Maximum/String</td>
+<td>Maximum Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Encoded</td>
+<td>Encoded (with forced padding) bit rate in bps, if some container padding is present</td>
+</tr>
+<tr class="even">
+<td>BitRate_Encoded/String</td>
+<td>Encoded (with forced padding) bit rate (with measurement), if some container padding is present</td>
+</tr>
+<tr class="odd">
+<td>Width</td>
+<td>Width (aperture size if present) in pixel</td>
+</tr>
+<tr class="even">
+<td>Width/String</td>
+<td>Width (aperture size if present) with measurement (pixel)</td>
+</tr>
+<tr class="odd">
+<td>Width_Offset</td>
+<td>Offset between original width and displayed width in pixel</td>
+</tr>
+<tr class="even">
+<td>Width_Offset/String</td>
+<td>Offset between original width and displayed width in pixel</td>
+</tr>
+<tr class="odd">
+<td>Width_Original</td>
+<td>Original (in the raw stream) width in pixel</td>
+</tr>
+<tr class="even">
+<td>Width_Original/String</td>
+<td>Original (in the raw stream) width with measurement (pixel)</td>
+</tr>
+<tr class="odd">
+<td>Width_CleanAperture</td>
+<td>Clean Aperture width in pixel</td>
+</tr>
+<tr class="even">
+<td>Width_CleanAperture/Strin</td>
+<td>Clean Aperture width with measurement (pixel)</td>
+</tr>
+<tr class="odd">
+<td>Height</td>
+<td>Height in pixel</td>
+</tr>
+<tr class="even">
+<td>Height/String</td>
+<td>Height with measurement (pixel)</td>
+</tr>
+<tr class="odd">
+<td>Height_Offset</td>
+<td>Offset between original height and displayed height in pixel</td>
+</tr>
+<tr class="even">
+<td>Height_Offset/String</td>
+<td>Offset between original height and displayed height  in pixel</td>
+</tr>
+<tr class="odd">
+<td>Height_Original</td>
+<td>Original (in the raw stream) height in pixel</td>
+</tr>
+<tr class="even">
+<td>Height_Original/String</td>
+<td>Original (in the raw stream) height with measurement (pixel)</td>
+</tr>
+<tr class="odd">
+<td>Height_CleanAperture</td>
+<td>Clean Aperture height in pixel</td>
+</tr>
+<tr class="even">
+<td>Height_CleanAperture/Stri</td>
+<td>Clean Aperture height with measurement (pixel)</td>
+</tr>
+<tr class="odd">
+<td>PixelAspectRatio</td>
+<td>Pixel Aspect ratio</td>
+</tr>
+<tr class="even">
+<td>PixelAspectRatio/String</td>
+<td>Pixel Aspect ratio</td>
+</tr>
+<tr class="odd">
+<td>PixelAspectRatio_Original</td>
+<td>Original (in the raw stream) Pixel Aspect ratio</td>
+</tr>
+<tr class="even">
+<td>PixelAspectRatio_Original</td>
+<td>Original (in the raw stream) Pixel Aspect ratio</td>
+</tr>
+<tr class="odd">
+<td>PixelAspectRatio_CleanApe</td>
+<td>Clean Aperture Pixel Aspect ratio</td>
+</tr>
+<tr class="even">
+<td>PixelAspectRatio_CleanApe</td>
+<td>Clean Aperture Pixel Aspect ratio</td>
+</tr>
+<tr class="odd">
+<td>DisplayAspectRatio</td>
+<td>Display Aspect ratio</td>
+</tr>
+<tr class="even">
+<td>DisplayAspectRatio/String</td>
+<td>Display Aspect ratio</td>
+</tr>
+<tr class="odd">
+<td>DisplayAspectRatio_Origin</td>
+<td>Original (in the raw stream) Display Aspect ratio</td>
+</tr>
+<tr class="even">
+<td>DisplayAspectRatio_Origin</td>
+<td>Original (in the raw stream) Display Aspect ratio</td>
+</tr>
+<tr class="odd">
+<td>DisplayAspectRatio_CleanA</td>
+<td>Clean Aperture Display Aspect ratio</td>
+</tr>
+<tr class="even">
+<td>DisplayAspectRatio_CleanA</td>
+<td>Clean Aperture Display Aspect ratio</td>
+</tr>
+<tr class="odd">
+<td>ActiveFormatDescription</td>
+<td>Active Format Description (AFD value)</td>
+</tr>
+<tr class="even">
+<td>ActiveFormatDescription/S</td>
+<td>Active Format Description (text)</td>
+</tr>
+<tr class="odd">
+<td>ActiveFormatDescription_M</td>
+<td>Active Format Description (AFD value) muxing mode (Ancillary or Raw stream)</td>
+</tr>
+<tr class="even">
+<td>Rotation</td>
+<td>Rotation</td>
+</tr>
+<tr class="odd">
+<td>Rotation/String</td>
+<td>Rotation (if not horizontal)</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Mode</td>
+<td>Frame rate mode (CFR, VFR)</td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Mode/String</td>
+<td>Frame rate mode (Constant, Variable)</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Mode_Original</td>
+<td>Original frame rate mode (CFR, VFR)</td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Mode_Original/S</td>
+<td>Original frame rate mode (Constant, Variable)</td>
+</tr>
+<tr class="even">
+<td>FrameRate</td>
+<td>Frames per second</td>
+</tr>
+<tr class="odd">
+<td>FrameRate/String</td>
+<td>Frames per second (with measurement)</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Original</td>
+<td>Original (in the raw stream) frames per second</td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Original/String</td>
+<td>Original (in the raw stream) frames per second (with measurement)</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Minimum</td>
+<td>Minimum Frames per second</td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Minimum/String</td>
+<td>Minimum Frames per second (with measurement)</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Nominal</td>
+<td>Nominal Frames per second</td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Nominal/String</td>
+<td>Nominal Frames per second (with measurement)</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Maximum</td>
+<td>Maximum Frames per second</td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Maximum/String</td>
+<td>Maximum Frames per second (with measurement)</td>
+</tr>
+<tr class="even">
+<td>FrameCount</td>
+<td>Number of frames</td>
+</tr>
+<tr class="odd">
+<td>Source_FrameCount</td>
+<td>Source Number of frames</td>
+</tr>
+<tr class="even">
+<td>Standard</td>
+<td>NTSC or PAL</td>
+</tr>
+<tr class="odd">
+<td>Resolution</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Resolution/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Colorimetry</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>ColorSpace</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ChromaSubsampling</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>BitDepth</td>
+<td>16/24/32</td>
+</tr>
+<tr class="odd">
+<td>BitDepth/String</td>
+<td>16/24/32 bits</td>
+</tr>
+<tr class="even">
+<td>ScanType</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ScanType/String</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ScanType_Original</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ScanType_Original/String</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ScanType_StoreMethod</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ScanType_StoreMethod_FieldsPerBlock</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ScanType_StoreMethod/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ScanOrder</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ScanOrder/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ScanOrder_Stored</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ScanOrder_Stored/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ScanOrder_StoredDisplayedInverted</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ScanOrder_Original</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ScanOrder_Original/String</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Interlacement</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Interlacement/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Compression_Mode</td>
+<td>Compression mode (Lossy or Lossless)</td>
+</tr>
+<tr class="odd">
+<td>Compression_Mode/String</td>
+<td>Compression mode (Lossy or Lossless)</td>
+</tr>
+<tr class="even">
+<td>Compression_Ratio</td>
+<td>Current stream size divided by uncompressed stream size</td>
+</tr>
+<tr class="odd">
+<td>Bits-(Pixel*Frame)</td>
+<td>bits/(Pixel*Frame) (like Gordian Knot)</td>
+</tr>
+<tr class="even">
+<td>Delay</td>
+<td>Delay fixed in the stream (relative) IN MS</td>
+</tr>
+<tr class="odd">
+<td>Delay/String</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay/String1</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay/String2</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay/String3</td>
+<td>Delay in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Delay/String4</td>
+<td>Delay in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Delay/String5</td>
+<td>Delay in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Delay_Settings</td>
+<td>Delay settings (in case of timecode for example)</td>
+</tr>
+<tr class="even">
+<td>Delay_DropFrame</td>
+<td>Delay drop frame</td>
+</tr>
+<tr class="odd">
+<td>Delay_Source</td>
+<td>Delay source (Container or Stream or empty)</td>
+</tr>
+<tr class="even">
+<td>Delay_Source/String</td>
+<td>Delay source (Container or Stream or empty)</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original</td>
+<td>Delay fixed in the raw stream (relative) IN MS</td>
+</tr>
+<tr class="even">
+<td>Delay_Original/String</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original/String1</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay_Original/String2</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original/String3</td>
+<td>Delay in format: HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Delay_Original/String4</td>
+<td>Delay in format: HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original/String5</td>
+<td>Delay in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Delay_Original_Settings</td>
+<td>Delay settings (in case of timecode for example)</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original_DropFrame</td>
+<td>Delay drop frame info</td>
+</tr>
+<tr class="even">
+<td>Delay_Original_Source</td>
+<td>Delay source (Stream or empty)</td>
+</tr>
+<tr class="odd">
+<td>TimeStamp_FirstFrame</td>
+<td>TimeStamp fixed in the stream (relative) IN MS</td>
+</tr>
+<tr class="even">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp with measurement</td>
+</tr>
+<tr class="odd">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp with measurement</td>
+</tr>
+<tr class="even">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp with measurement</td>
+</tr>
+<tr class="odd">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp in format: HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>TimeCode_FirstFrame</td>
+<td>Time code in HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available format</td>
+</tr>
+<tr class="odd">
+<td>TimeCode_Settings</td>
+<td>Time code settings</td>
+</tr>
+<tr class="even">
+<td>TimeCode_Source</td>
+<td>Time code source (Container, Stream, SystemScheme1, SDTI, ANC...)</td>
+</tr>
+<tr class="odd">
+<td>Gop_OpenClosed</td>
+<td>Time code information about Open/Closed</td>
+</tr>
+<tr class="even">
+<td>Gop_OpenClosed/String</td>
+<td>Time code information about Open/Closed</td>
+</tr>
+<tr class="odd">
+<td>Gop_OpenClosed_FirstFrame</td>
+<td>Time code information about Open/Closed of first frame if GOP is Open for the other GOPs</td>
+</tr>
+<tr class="even">
+<td>Gop_OpenClosed_FirstFrame</td>
+<td>Time code information about Open/Closed of first frame if GOP is Open for the other GOPs</td>
+</tr>
+<tr class="odd">
+<td>StreamSize</td>
+<td>Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>StreamSize/String</td>
+<td>Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String5</td>
+<td>Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Proportion</td>
+<td>Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize</td>
+<td>Source Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize/String</td>
+<td>Source Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize/String5</td>
+<td>Source Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Proport</td>
+<td>Source Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded</td>
+<td>Encoded Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded/String</td>
+<td>Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded/String</td>
+<td>Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded_Propor</td>
+<td>Encoded Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>Alignment</td>
+<td>How this stream file is aligned in the container</td>
+</tr>
+<tr class="even">
+<td>Alignment/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>Name of the track</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application/Strin</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit, trying to have the format 'CompanyName ProductName (OperatingSystem) Version (Date)'</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application_Compa</td>
+<td>Name of the company</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application_Name</td>
+<td>Name of the product</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application_Versi</td>
+<td>Version of the product</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application_Url</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit.</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library</td>
+<td>Software used to create the file</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library/String</td>
+<td>Software used to create the file, trying to have the format 'CompanyName ProductName (OperatingSystem) Version (Date)'</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_CompanyNa</td>
+<td>Name of the company</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_Name</td>
+<td>Name of the the encoding-software</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_Version</td>
+<td>Version of encoding-software</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_Date</td>
+<td>Release date of software</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_Settings</td>
+<td>Parameters used by the software</td>
+</tr>
+<tr class="odd">
+<td>Encoded_OperatingSystem</td>
+<td>Operating System of encoding-software</td>
+</tr>
+<tr class="even">
+<td>Language</td>
+<td>Language (2-letter ISO 639-1 if exists, else 3-letter ISO 639-2, and with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn)</td>
+</tr>
+<tr class="odd">
+<td>Language/String</td>
+<td>Language (full)</td>
+</tr>
+<tr class="even">
+<td>Language/String1</td>
+<td>Language (full)</td>
+</tr>
+<tr class="odd">
+<td>Language/String2</td>
+<td>Language (2-letter ISO 639-1 if exists, else empty)</td>
+</tr>
+<tr class="even">
+<td>Language/String3</td>
+<td>Language (3-letter ISO 639-2 if exists, else empty)</td>
+</tr>
+<tr class="odd">
+<td>Language/String4</td>
+<td>Language (2-letter ISO 639-1 if exists with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn, else empty)</td>
+</tr>
+<tr class="even">
+<td>Language_More</td>
+<td>More info about Language (e.g. Director's Comment)</td>
+</tr>
+<tr class="odd">
+<td>Default</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="even">
+<td>Default/String</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="odd">
+<td>Forced</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="even">
+<td>Forced/String</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Date</td>
+<td>UTC time that the encoding of this item was completed began.</td>
+</tr>
+<tr class="even">
+<td>Tagged_Date</td>
+<td>UTC time that the tags were done for this item.</td>
+</tr>
+<tr class="odd">
+<td>Encryption</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>BufferSize</td>
+<td>Defines the size of the buffer needed to decode the sequence.</td>
+</tr>
+<tr class="odd">
+<td>colour_range</td>
+<td>Colour range for YUV colour space</td>
+</tr>
+<tr class="even">
+<td>colour_description_presen</td>
+<td>Presence of colour description</td>
+</tr>
+<tr class="odd">
+<td>colour_primaries</td>
+<td>Chromaticity coordinates of the source primaries</td>
+</tr>
+<tr class="even">
+<td>transfer_characteristics</td>
+<td>Opto-electronic transfer characteristic of the source picture</td>
+</tr>
+<tr class="odd">
+<td>matrix_coefficients</td>
+<td>Matrix coefficients used in deriving luma and chroma signals from the green, blue, and red primaries</td>
+</tr>
+<tr class="even">
+<td>colour_description_presen</td>
+<td>Presence of colour description</td>
+</tr>
+<tr class="odd">
+<td>colour_primaries_Original</td>
+<td>Chromaticity coordinates of the source primaries</td>
+</tr>
+<tr class="even">
+<td>transfer_characteristics_</td>
+<td>Opto-electronic transfer characteristic of the source picture</td>
+</tr>
+<tr class="odd">
+<td>matrix_coefficients_Origi</td>
+<td>Matrix coefficients used in deriving luma and chroma signals from the green, blue, and red primaries</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="audio">Audio</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Count</td>
+<td>Count of objects available in this stream</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>bit field (0=IsAccepted, 1=IsFilled, 2=IsUpdated, 3=IsFinished)</td>
+</tr>
+<tr class="odd">
+<td>StreamCount</td>
+<td>Count of streams of that kind available</td>
+</tr>
+<tr class="even">
+<td>StreamKind</td>
+<td>Stream type name</td>
+</tr>
+<tr class="odd">
+<td>StreamKind/String</td>
+<td>Stream type name</td>
+</tr>
+<tr class="even">
+<td>StreamKindID</td>
+<td>Number of the stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>StreamKindPos</td>
+<td>When multiple streams, number of the stream (base=1)</td>
+</tr>
+<tr class="even">
+<td>StreamOrder</td>
+<td>Stream order in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>FirstPacketOrder</td>
+<td>Order of the first fully decodable packet met in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="even">
+<td>Inform</td>
+<td>Last **Inform** call</td>
+</tr>
+<tr class="odd">
+<td>ID</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>ID/String</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>UniqueID</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="even">
+<td>UniqueID/String</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="odd">
+<td>MenuID</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>MenuID/String</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>Format</td>
+<td>Format used</td>
+</tr>
+<tr class="even">
+<td>Format/Info</td>
+<td>Info about the format</td>
+</tr>
+<tr class="odd">
+<td>Format/Url</td>
+<td>Homepage of this format</td>
+</tr>
+<tr class="even">
+<td>Format_Commercial</td>
+<td>Commercial name used by vendor for theses setings or Format field if there is no difference</td>
+</tr>
+<tr class="odd">
+<td>Format_Commercial_IfAny</td>
+<td>Commercial name used by vendor for theses setings if there is one</td>
+</tr>
+<tr class="even">
+<td>Format_Version</td>
+<td>Version of this format</td>
+</tr>
+<tr class="odd">
+<td>Format_Profile</td>
+<td>Profile of this Format</td>
+</tr>
+<tr class="even">
+<td>Format_Compression</td>
+<td>Compression method used</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings</td>
+<td>Settings needed for decoder used, summary</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_SBR</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_SBR/String</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Format_Settings_PS</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_PS/String</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Format_Settings_Mode</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_ModeExtension</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Format_Settings_Emphasis</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_Floor</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Format_Settings_Firm</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_Endianness</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Format_Settings_Sign</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_Law</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Format_Settings_ITU</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_Wrapping</td>
+<td>Wrapping mode (Frame wrapped or Clip wrapped)</td>
+</tr>
+<tr class="even">
+<td>Matrix_Format</td>
+<td>Matrix format (e.g. DTS Neural)</td>
+</tr>
+<tr class="odd">
+<td>InternetMediaType</td>
+<td>Internet Media Type (aka MIME Type, Content-Type)</td>
+</tr>
+<tr class="even">
+<td>MuxingMode</td>
+<td>How this stream is muxed in the container</td>
+</tr>
+<tr class="odd">
+<td>MuxingMode_MoreInfo</td>
+<td>More info (text) about the muxing mode</td>
+</tr>
+<tr class="even">
+<td>CodecID</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="odd">
+<td>CodecID/String</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="even">
+<td>CodecID/Info</td>
+<td>Info about codec ID</td>
+</tr>
+<tr class="odd">
+<td>CodecID/Hint</td>
+<td>Hint/popular name for this codec ID</td>
+</tr>
+<tr class="even">
+<td>CodecID/Url</td>
+<td>Homepage for more details about this codec ID</td>
+</tr>
+<tr class="odd">
+<td>CodecID_Description</td>
+<td>Manual description given by the container</td>
+</tr>
+<tr class="even">
+<td>Codec</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec/Family</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec/Info</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec/Url</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec/CC</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Description</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Profile</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Settings</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Settings_Automatic</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Settings_Floor</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Settings_Firm</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Settings_Endianness</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Settings_Sign</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec_Settings_Law</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec_Settings_ITU</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Duration</td>
+<td>Play time of the stream, in ms</td>
+</tr>
+<tr class="odd">
+<td>Duration/String</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration/String1</td>
+<td>Play time in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration/String2</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration/String3</td>
+<td>Play time in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Duration/String4</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Duration/String5</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Duration_FirstFrame</td>
+<td>Duration of the first frame if it is longer than others, in ms</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame/Strin</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Duration_FirstFrame/Strin</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Duration_LastFrame</td>
+<td>Duration of the last frame if it is longer than others, in ms</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame/String</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Duration_LastFrame/String</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration</td>
+<td>Source Play time of the stream, in ms</td>
+</tr>
+<tr class="even">
+<td>Source_Duration/String</td>
+<td>Source Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration/String1</td>
+<td>Source Play time in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration/String2</td>
+<td>Source Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration/String3</td>
+<td>Source Play time in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Source_Duration/String4</td>
+<td>Source Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration/String5</td>
+<td>Source Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in ms</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in ms</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>BitRate_Mode</td>
+<td>Bit rate mode (VBR, CBR)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Mode/String</td>
+<td>Bit rate mode (Constant, Variable)</td>
+</tr>
+<tr class="even">
+<td>BitRate</td>
+<td>Bit rate in bps</td>
+</tr>
+<tr class="odd">
+<td>BitRate/String</td>
+<td>Bit rate (with measurement)</td>
+</tr>
+<tr class="even">
+<td>BitRate_Minimum</td>
+<td>Minimum Bit rate in bps</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Minimum/String</td>
+<td>Minimum Bit rate (with measurement)</td>
+</tr>
+<tr class="even">
+<td>BitRate_Nominal</td>
+<td>Nominal Bit rate in bps</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Nominal/String</td>
+<td>Nominal Bit rate (with measurement)</td>
+</tr>
+<tr class="even">
+<td>BitRate_Maximum</td>
+<td>Maximum Bit rate in bps</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Maximum/String</td>
+<td>Maximum Bit rate (with measurement)</td>
+</tr>
+<tr class="even">
+<td>BitRate_Encoded</td>
+<td>Encoded (with forced padding) bit rate in bps, if some container padding is present</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Encoded/String</td>
+<td>Encoded (with forced padding) bit rate (with measurement), if some container padding is present</td>
+</tr>
+<tr class="even">
+<td>Channel(s)</td>
+<td>Number of channels</td>
+</tr>
+<tr class="odd">
+<td>Channel(s)/String</td>
+<td>Number of channels (with measurement)</td>
+</tr>
+<tr class="even">
+<td>Channel(s)_Original</td>
+<td>Number of channels</td>
+</tr>
+<tr class="odd">
+<td>Channel(s)_Original/Strin</td>
+<td>Number of channels (with measurement)</td>
+</tr>
+<tr class="even">
+<td>Matrix_Channel(s)</td>
+<td>Number of channels after matrix decoding</td>
+</tr>
+<tr class="odd">
+<td>Matrix_Channel(s)/String</td>
+<td>Number of channels after matrix decoding (with measurement)</td>
+</tr>
+<tr class="even">
+<td>ChannelPositions</td>
+<td>Position of channels</td>
+</tr>
+<tr class="odd">
+<td>ChannelPositions/String2</td>
+<td>Position of channels (x/y.z format)</td>
+</tr>
+<tr class="even">
+<td>Matrix_ChannelPositions</td>
+<td>Position of channels after matrix decoding</td>
+</tr>
+<tr class="odd">
+<td>Matrix_ChannelPositions/S</td>
+<td>Position of channels after matrix decoding (x/y.z format)</td>
+</tr>
+<tr class="even">
+<td>ChannelLayout</td>
+<td>Layout of channels (in the stream)</td>
+</tr>
+<tr class="odd">
+<td>ChannelLayoutID</td>
+<td>ID of layout of channels (e.g. MXF descriptor channel assignment). Warning, sometimes this is not enough for uniquely identifying a layout (e.g. MXF descriptor channel assignment is SMPTE 377-4). For AC-3, the form is x,y with x=acmod and y=lfeon.</td>
+</tr>
+<tr class="even">
+<td>SamplingRate</td>
+<td>Sampling rate</td>
+</tr>
+<tr class="odd">
+<td>SamplingRate/String</td>
+<td>in KHz</td>
+</tr>
+<tr class="even">
+<td>SamplingCount</td>
+<td>Sample count (based on sampling rate)</td>
+</tr>
+<tr class="odd">
+<td>Source_SamplingCount</td>
+<td>Source Sample count (based on sampling rate)</td>
+</tr>
+<tr class="even">
+<td>FrameRate</td>
+<td>Frames per second</td>
+</tr>
+<tr class="odd">
+<td>FrameRate/String</td>
+<td>Frames per second (with measurement)</td>
+</tr>
+<tr class="even">
+<td>FrameCount</td>
+<td>Frame count (a frame contains a count of samples depends of the format)</td>
+</tr>
+<tr class="odd">
+<td>Source_FrameCount</td>
+<td>Source Frame count (a frame contains a count of samples depends of the format)</td>
+</tr>
+<tr class="even">
+<td>Resolution</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Resolution/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>BitDepth</td>
+<td>Resolution in bits (8, 16, 20, 24). Note: significant bits in case the stored bit depth is different</td>
+</tr>
+<tr class="odd">
+<td>BitDepth/String</td>
+<td>Resolution in bits (8, 16, 20, 24). Note: significant bits in case the stored bit depth is different</td>
+</tr>
+<tr class="even">
+<td>BitDepth_Stored</td>
+<td>Stored Resolution in bits (8, 16, 20, 24)</td>
+</tr>
+<tr class="odd">
+<td>BitDepth_Stored/String</td>
+<td>Stored Resolution in bits (8, 16, 20, 24)</td>
+</tr>
+<tr class="even">
+<td>Compression_Mode</td>
+<td>Compression mode (Lossy or Lossless)</td>
+</tr>
+<tr class="odd">
+<td>Compression_Mode/String</td>
+<td>Compression mode (Lossy or Lossless)</td>
+</tr>
+<tr class="even">
+<td>Compression_Ratio</td>
+<td>Current stream size divided by uncompressed stream size</td>
+</tr>
+<tr class="odd">
+<td>Delay</td>
+<td>Delay fixed in the stream (relative) IN MS</td>
+</tr>
+<tr class="even">
+<td>Delay/String</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay/String1</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay/String2</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay/String3</td>
+<td>Delay in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Delay/String4</td>
+<td>Delay in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Delay/String5</td>
+<td>Delay in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Delay_Settings</td>
+<td>Delay settings (in case of timecode for example)</td>
+</tr>
+<tr class="odd">
+<td>Delay_DropFrame</td>
+<td>Delay drop frame</td>
+</tr>
+<tr class="even">
+<td>Delay_Source</td>
+<td>Delay source (Container or Stream or empty)</td>
+</tr>
+<tr class="odd">
+<td>Delay_Source/String</td>
+<td>Delay source (Container or Stream or empty)</td>
+</tr>
+<tr class="even">
+<td>Delay_Original</td>
+<td>Delay fixed in the raw stream (relative) IN MS</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original/String</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay_Original/String1</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original/String2</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay_Original/String3</td>
+<td>Delay in format: HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original/String4</td>
+<td>Delay in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Delay_Original/String5</td>
+<td>Delay in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original_Settings</td>
+<td>Delay settings (in case of timecode for example)</td>
+</tr>
+<tr class="even">
+<td>Delay_Original_DropFrame</td>
+<td>Delay drop frame info</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original_Source</td>
+<td>Delay source (Stream or empty)</td>
+</tr>
+<tr class="even">
+<td>Video_Delay</td>
+<td>Delay fixed in the stream (absolute / video)</td>
+</tr>
+<tr class="odd">
+<td>Video_Delay/String</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Video_Delay/String1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Video_Delay/String2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Video_Delay/String3</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Video_Delay/String4</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Video_Delay/String5</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Video0_Delay</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Video0_Delay/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Video0_Delay/String1</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Video0_Delay/String2</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Video0_Delay/String3</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Video0_Delay/String4</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Video0_Delay/String5</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>ReplayGain_Gain</td>
+<td>The gain to apply to reach 89dB SPL on playback</td>
+</tr>
+<tr class="odd">
+<td>ReplayGain_Gain/String</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ReplayGain_Peak</td>
+<td>The maximum absolute peak value of the item</td>
+</tr>
+<tr class="odd">
+<td>StreamSize</td>
+<td>Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>StreamSize/String</td>
+<td>Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String5</td>
+<td>Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Proportion</td>
+<td>Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize</td>
+<td>Source Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize/String</td>
+<td>Source Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize/String5</td>
+<td>Source Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Proport</td>
+<td>Source Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded</td>
+<td>Encoded Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded/String</td>
+<td>Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded/String</td>
+<td>Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded_Propor</td>
+<td>Encoded Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>Alignment</td>
+<td>How this stream file is aligned in the container</td>
+</tr>
+<tr class="even">
+<td>Alignment/String</td>
+<td>Where this stream file is aligned in the container</td>
+</tr>
+<tr class="odd">
+<td>Interleave_VideoFrames</td>
+<td>Between how many video frames the stream is inserted</td>
+</tr>
+<tr class="even">
+<td>Interleave_Duration</td>
+<td>Between how much time (ms) the stream is inserted</td>
+</tr>
+<tr class="odd">
+<td>Interleave_Duration/Strin</td>
+<td>Between how much time and video frames the stream is inserted (with measurement)</td>
+</tr>
+<tr class="even">
+<td>Interleave_Preload</td>
+<td>How much time is buffered before the first video frame</td>
+</tr>
+<tr class="odd">
+<td>Interleave_Preload/String</td>
+<td>How much time is buffered before the first video frame (with measurement)</td>
+</tr>
+<tr class="even">
+<td>Title</td>
+<td>Name of the track</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application/Strin</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit, trying to have the format 'CompanyName ProductName (OperatingSystem) Version (Date)'</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application_Compa</td>
+<td>Name of the company</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application_Name</td>
+<td>Name of the product</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application_Versi</td>
+<td>Version of the product</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application_Url</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit.</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library</td>
+<td>Software used to create the file</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library/String</td>
+<td>Software used to create the file, trying to have the format 'CompanyName ProductName (OperatingSystem) Version (Date)'</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_CompanyNa</td>
+<td>Name of the company</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_Name</td>
+<td>Name of the the encoding-software</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_Version</td>
+<td>Version of encoding-software</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_Date</td>
+<td>Release date of software</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_Settings</td>
+<td>Parameters used by the software</td>
+</tr>
+<tr class="even">
+<td>Encoded_OperatingSystem</td>
+<td>Operating System of encoding-software</td>
+</tr>
+<tr class="odd">
+<td>Language</td>
+<td>Language (2-letter ISO 639-1 if exists, else 3-letter ISO 639-2, and with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn)</td>
+</tr>
+<tr class="even">
+<td>Language/String</td>
+<td>Language (full)</td>
+</tr>
+<tr class="odd">
+<td>Language/String1</td>
+<td>Language (full)</td>
+</tr>
+<tr class="even">
+<td>Language/String2</td>
+<td>Language (2-letter ISO 639-1 if exists, else empty)</td>
+</tr>
+<tr class="odd">
+<td>Language/String3</td>
+<td>Language (3-letter ISO 639-2 if exists, else empty)</td>
+</tr>
+<tr class="even">
+<td>Language/String4</td>
+<td>Language (2-letter ISO 639-1 if exists with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn, else empty)</td>
+</tr>
+<tr class="odd">
+<td>Language_More</td>
+<td>More info about Language (e.g. Director's Comment)</td>
+</tr>
+<tr class="even">
+<td>Default</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="odd">
+<td>Default/String</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="even">
+<td>Forced</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="odd">
+<td>Forced/String</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="even">
+<td>Encoded_Date</td>
+<td>UTC time that the encoding of this item was completed began.</td>
+</tr>
+<tr class="odd">
+<td>Tagged_Date</td>
+<td>UTC time that the tags were done for this item.</td>
+</tr>
+<tr class="even">
+<td>Encryption</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="text">Text</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Count</td>
+<td>Count of objects available in this stream</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>bit field (0=IsAccepted, 1=IsFilled, 2=IsUpdated, 3=IsFinished)</td>
+</tr>
+<tr class="odd">
+<td>StreamCount</td>
+<td>Count of streams of that kind available</td>
+</tr>
+<tr class="even">
+<td>StreamKind</td>
+<td>Stream type name</td>
+</tr>
+<tr class="odd">
+<td>StreamKind/String</td>
+<td>Stream type name</td>
+</tr>
+<tr class="even">
+<td>StreamKindID</td>
+<td>Number of the stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>StreamKindPos</td>
+<td>When multiple streams, number of the stream (base=1)</td>
+</tr>
+<tr class="even">
+<td>StreamOrder</td>
+<td>Stream order in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>FirstPacketOrder</td>
+<td>Order of the first fully decodable packet met in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="even">
+<td>Inform</td>
+<td>Last **Inform** call</td>
+</tr>
+<tr class="odd">
+<td>ID</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>ID/String</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>UniqueID</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="even">
+<td>UniqueID/String</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="odd">
+<td>MenuID</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>MenuID/String</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>Format</td>
+<td>Format used</td>
+</tr>
+<tr class="even">
+<td>Format/Info</td>
+<td>Info about Format</td>
+</tr>
+<tr class="odd">
+<td>Format/Url</td>
+<td>Link</td>
+</tr>
+<tr class="even">
+<td>Format_Commercial</td>
+<td>Commercial name used by vendor for theses setings or Format field if there is no difference</td>
+</tr>
+<tr class="odd">
+<td>Format_Commercial_IfAny</td>
+<td>Commercial name used by vendor for theses setings if there is one</td>
+</tr>
+<tr class="even">
+<td>Format_Version</td>
+<td>Version of this format</td>
+</tr>
+<tr class="odd">
+<td>Format_Profile</td>
+<td>Profile of the Format</td>
+</tr>
+<tr class="even">
+<td>Format_Compression</td>
+<td>Compression method used</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings</td>
+<td>Settings needed for decoder used</td>
+</tr>
+<tr class="even">
+<td>Format_Settings_Wrapping</td>
+<td>Wrapping mode (Frame wrapped or Clip wrapped)</td>
+</tr>
+<tr class="odd">
+<td>InternetMediaType</td>
+<td>Internet Media Type (aka MIME Type, Content-Type)</td>
+</tr>
+<tr class="even">
+<td>MuxingMode</td>
+<td>How this stream is muxed in the container</td>
+</tr>
+<tr class="odd">
+<td>MuxingMode_MoreInfo</td>
+<td>More info (text) about the muxing mode</td>
+</tr>
+<tr class="even">
+<td>CodecID</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="odd">
+<td>CodecID/String</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="even">
+<td>CodecID/Info</td>
+<td>Info about codec ID</td>
+</tr>
+<tr class="odd">
+<td>CodecID/Hint</td>
+<td>A hint for this codec ID</td>
+</tr>
+<tr class="even">
+<td>CodecID/Url</td>
+<td>A link for more details about this codec ID</td>
+</tr>
+<tr class="odd">
+<td>CodecID_Description</td>
+<td>Manual description given by the container</td>
+</tr>
+<tr class="even">
+<td>Codec</td>
+<td>Deprecated</td>
+</tr>
+<tr class="odd">
+<td>Codec/String</td>
+<td>Deprecated</td>
+</tr>
+<tr class="even">
+<td>Codec/Info</td>
+<td>Deprecated</td>
+</tr>
+<tr class="odd">
+<td>Codec/Url</td>
+<td>Deprecated</td>
+</tr>
+<tr class="even">
+<td>Codec/CC</td>
+<td>Deprecated</td>
+</tr>
+<tr class="odd">
+<td>Duration</td>
+<td>Play time of the stream, in ms</td>
+</tr>
+<tr class="even">
+<td>Duration/String</td>
+<td>Play time (formated)</td>
+</tr>
+<tr class="odd">
+<td>Duration/String1</td>
+<td>Play time in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration/String2</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration/String3</td>
+<td>Play time in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Duration/String4</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Duration/String5</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame</td>
+<td>Duration of the first frame if it is longer than others, in ms</td>
+</tr>
+<tr class="odd">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Duration_FirstFrame/Strin</td>
+<td>Duration of the first frame if it is longer than others, in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame</td>
+<td>Duration of the last frame if it is longer than others, in ms</td>
+</tr>
+<tr class="even">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Duration_LastFrame/String</td>
+<td>Duration of the last frame if it is longer than others, in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Source_Duration</td>
+<td>Source Play time of the stream, in ms</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration/String</td>
+<td>Source Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration/String1</td>
+<td>Source Play time in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration/String2</td>
+<td>Source Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration/String3</td>
+<td>Source Play time in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration/String4</td>
+<td>Source Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Source_Duration/String5</td>
+<td>Source Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in ms</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_FirstFram</td>
+<td>Source Duration of the first frame if it is longer than others, in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in ms</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Source_Duration_LastFrame</td>
+<td>Source Duration of the last frame if it is longer than others, in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Mode</td>
+<td>Bit rate mode (VBR, CBR)</td>
+</tr>
+<tr class="even">
+<td>BitRate_Mode/String</td>
+<td>Bit rate mode (Constant, Variable)</td>
+</tr>
+<tr class="odd">
+<td>BitRate</td>
+<td>Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>BitRate/String</td>
+<td>Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Minimum</td>
+<td>Minimum Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>BitRate_Minimum/String</td>
+<td>Minimum Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Nominal</td>
+<td>Nominal Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>BitRate_Nominal/String</td>
+<td>Nominal Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Maximum</td>
+<td>Maximum Bit rate in bps</td>
+</tr>
+<tr class="even">
+<td>BitRate_Maximum/String</td>
+<td>Maximum Bit rate (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>BitRate_Encoded</td>
+<td>Encoded (with forced padding) bit rate in bps, if some container padding is present</td>
+</tr>
+<tr class="even">
+<td>BitRate_Encoded/String</td>
+<td>Encoded (with forced padding) bit rate (with measurement), if some container padding is present</td>
+</tr>
+<tr class="odd">
+<td>Width</td>
+<td>Width</td>
+</tr>
+<tr class="even">
+<td>Width/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Height</td>
+<td>Height</td>
+</tr>
+<tr class="even">
+<td>Height/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Mode</td>
+<td>Frame rate mode (CFR, VFR)</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Mode/String</td>
+<td>Frame rate mode (Constant, Variable)</td>
+</tr>
+<tr class="odd">
+<td>FrameRate</td>
+<td>Frames per second</td>
+</tr>
+<tr class="even">
+<td>FrameRate/String</td>
+<td>Frames per second (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Minimum</td>
+<td>Minimum Frames per second</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Minimum/String</td>
+<td>Minimum Frames per second (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Nominal</td>
+<td>Nominal Frames per second</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Nominal/String</td>
+<td>Nominal Frames per second (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Maximum</td>
+<td>Maximum Frames per second</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Maximum/String</td>
+<td>Maximum Frames per second (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>FrameRate_Original</td>
+<td>Original (in the raw stream) Frames per second</td>
+</tr>
+<tr class="even">
+<td>FrameRate_Original/String</td>
+<td>Original (in the raw stream) Frames per second (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>FrameCount</td>
+<td>Number of frames</td>
+</tr>
+<tr class="even">
+<td>Source_FrameCount</td>
+<td>Source Number of frames</td>
+</tr>
+<tr class="odd">
+<td>ColorSpace</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ChromaSubsampling</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Resolution</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Resolution/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>BitDepth</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>BitDepth/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Compression_Mode</td>
+<td>Compression mode (Lossy or Lossless)</td>
+</tr>
+<tr class="even">
+<td>Compression_Mode/String</td>
+<td>Compression mode (Lossy or Lossless)</td>
+</tr>
+<tr class="odd">
+<td>Compression_Ratio</td>
+<td>Current stream size divided by uncompressed stream size</td>
+</tr>
+<tr class="even">
+<td>Delay</td>
+<td>Delay fixed in the stream (relative) IN MS</td>
+</tr>
+<tr class="odd">
+<td>Delay/String</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay/String1</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay/String2</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay/String3</td>
+<td>Delay in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Delay/String4</td>
+<td>Delay in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Delay/String5</td>
+<td>Delay in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Delay_Settings</td>
+<td>Delay settings (in case of timecode for example)</td>
+</tr>
+<tr class="even">
+<td>Delay_DropFrame</td>
+<td>Delay drop frame</td>
+</tr>
+<tr class="odd">
+<td>Delay_Source</td>
+<td>Delay source (Container or Stream or empty)</td>
+</tr>
+<tr class="even">
+<td>Delay_Source/String</td>
+<td>Delay source (Container or Stream or empty)</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original</td>
+<td>Delay fixed in the raw stream (relative) IN MS</td>
+</tr>
+<tr class="even">
+<td>Delay_Original/String</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original/String1</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay_Original/String2</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original/String3</td>
+<td>Delay in format: HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Delay_Original/String4</td>
+<td>Delay in format: HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original/String5</td>
+<td>Delay in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Delay_Original_Settings</td>
+<td>Delay settings (in case of timecode for example)</td>
+</tr>
+<tr class="odd">
+<td>Delay_Original_DropFrame</td>
+<td>Delay drop frame info</td>
+</tr>
+<tr class="even">
+<td>Delay_Original_Source</td>
+<td>Delay source (Stream or empty)</td>
+</tr>
+<tr class="odd">
+<td>Video_Delay</td>
+<td>Delay fixed in the stream (absolute / video)</td>
+</tr>
+<tr class="even">
+<td>Video_Delay/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Video_Delay/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Video_Delay/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Video_Delay/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Video_Delay/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Video_Delay/String5</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Video0_Delay</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Video0_Delay/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Video0_Delay/String1</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Video0_Delay/String2</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Video0_Delay/String3</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Video0_Delay/String4</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Video0_Delay/String5</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>StreamSize</td>
+<td>Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>StreamSize/String</td>
+<td>Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String5</td>
+<td>Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Proportion</td>
+<td>Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize</td>
+<td>Source Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize/String</td>
+<td>Source Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize/String5</td>
+<td>Source Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Proport</td>
+<td>Source Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded</td>
+<td>Encoded Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded/String</td>
+<td>Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize_Encoded/String</td>
+<td>Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Encoded_Propor</td>
+<td>Encoded Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Streamsize in bytes</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Streamsize in with percentage value</td>
+</tr>
+<tr class="even">
+<td>Source_StreamSize_Encoded</td>
+<td>Source Encoded Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>Name of the track</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application/Strin</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit, trying to have the format 'CompanyName ProductName (OperatingSystem) Version (Date)'</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application_Compa</td>
+<td>Name of the company</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application_Name</td>
+<td>Name of the product</td>
+</tr>
+<tr class="even">
+<td>Encoded_Application_Versi</td>
+<td>Version of the product</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Application_Url</td>
+<td>Name of the software package used to create the file, such as Microsoft WaveEdit.</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library</td>
+<td>Software used to create the file</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library/String</td>
+<td>Software used to create the file, trying to have the format 'CompanyName ProductName (OperatingSystem) Version (Date)'</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_CompanyNa</td>
+<td>Name of the company</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_Name</td>
+<td>Name of the the encoding-software</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_Version</td>
+<td>Version of encoding-software</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_Date</td>
+<td>Release date of software</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_Settings</td>
+<td>Parameters used by the software</td>
+</tr>
+<tr class="odd">
+<td>Encoded_OperatingSystem</td>
+<td>Operating System of encoding-software</td>
+</tr>
+<tr class="even">
+<td>Language</td>
+<td>Language (2-letter ISO 639-1 if exists, else 3-letter ISO 639-2, and with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn)</td>
+</tr>
+<tr class="odd">
+<td>Language/String</td>
+<td>Language (full)</td>
+</tr>
+<tr class="even">
+<td>Language/String1</td>
+<td>Language (full)</td>
+</tr>
+<tr class="odd">
+<td>Language/String2</td>
+<td>Language (2-letter ISO 639-1 if exists, else empty)</td>
+</tr>
+<tr class="even">
+<td>Language/String3</td>
+<td>Language (3-letter ISO 639-2 if exists, else empty)</td>
+</tr>
+<tr class="odd">
+<td>Language/String4</td>
+<td>Language (2-letter ISO 639-1 if exists with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn, else empty)</td>
+</tr>
+<tr class="even">
+<td>Language_More</td>
+<td>More info about Language (e.g. Director's Comment)</td>
+</tr>
+<tr class="odd">
+<td>Default</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="even">
+<td>Default/String</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="odd">
+<td>Forced</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="even">
+<td>Forced/String</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="odd">
+<td>Summary</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Encoded_Date</td>
+<td>The time that the encoding of this item was completed began.</td>
+</tr>
+<tr class="odd">
+<td>Tagged_Date</td>
+<td>The time that the tags were done for this item.</td>
+</tr>
+<tr class="even">
+<td>Encryption</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="other">Other</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Count</td>
+<td>Count of objects available in this stream</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>bit field (0=IsAccepted, 1=IsFilled, 2=IsUpdated, 3=IsFinished)</td>
+</tr>
+<tr class="odd">
+<td>StreamCount</td>
+<td>Count of streams of that kind available</td>
+</tr>
+<tr class="even">
+<td>StreamKind</td>
+<td>Stream type name</td>
+</tr>
+<tr class="odd">
+<td>StreamKind/String</td>
+<td>Stream type name</td>
+</tr>
+<tr class="even">
+<td>StreamKindID</td>
+<td>Number of the stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>StreamKindPos</td>
+<td>When multiple streams, number of the stream (base=1)</td>
+</tr>
+<tr class="even">
+<td>StreamOrder</td>
+<td>Stream order in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>FirstPacketOrder</td>
+<td>Order of the first fully decodable packet met in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="even">
+<td>Inform</td>
+<td>Last **Inform** call</td>
+</tr>
+<tr class="odd">
+<td>ID</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>ID/String</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>UniqueID</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="even">
+<td>UniqueID/String</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="odd">
+<td>MenuID</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>MenuID/String</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>Type</td>
+<td>Type</td>
+</tr>
+<tr class="even">
+<td>Format</td>
+<td>Format used</td>
+</tr>
+<tr class="odd">
+<td>Format/Info</td>
+<td>Info about Format</td>
+</tr>
+<tr class="even">
+<td>Format/Url</td>
+<td>Link</td>
+</tr>
+<tr class="odd">
+<td>Format_Commercial</td>
+<td>Commercial name used by vendor for theses setings or Format field if there is no difference</td>
+</tr>
+<tr class="even">
+<td>Format_Commercial_IfAny</td>
+<td>Commercial name used by vendor for theses setings if there is one</td>
+</tr>
+<tr class="odd">
+<td>Format_Version</td>
+<td>Version of this format</td>
+</tr>
+<tr class="even">
+<td>Format_Profile</td>
+<td>Profile of the Format</td>
+</tr>
+<tr class="odd">
+<td>Format_Compression</td>
+<td>Compression method used</td>
+</tr>
+<tr class="even">
+<td>Format_Settings</td>
+<td>Settings needed for decoder used</td>
+</tr>
+<tr class="odd">
+<td>MuxingMode</td>
+<td>How this file is muxed in the container</td>
+</tr>
+<tr class="even">
+<td>CodecID</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="odd">
+<td>CodecID/String</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="even">
+<td>CodecID/Info</td>
+<td>Info about this codec</td>
+</tr>
+<tr class="odd">
+<td>CodecID/Hint</td>
+<td>A hint/popular name for this codec</td>
+</tr>
+<tr class="even">
+<td>CodecID/Url</td>
+<td>A link to more details about this codec ID</td>
+</tr>
+<tr class="odd">
+<td>CodecID_Description</td>
+<td>Manual description given by the container</td>
+</tr>
+<tr class="even">
+<td>Duration</td>
+<td>Play time of the stream in ms</td>
+</tr>
+<tr class="odd">
+<td>Duration/String</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration/String1</td>
+<td>Play time in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration/String2</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration/String3</td>
+<td>Play time in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Duration/String4</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Duration/String5</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Duration_Start</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Duration_End</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FrameRate</td>
+<td>Frames per second</td>
+</tr>
+<tr class="even">
+<td>FrameRate/String</td>
+<td>Frames per second (with measurement)</td>
+</tr>
+<tr class="odd">
+<td>FrameCount</td>
+<td>Number of frames</td>
+</tr>
+<tr class="even">
+<td>TimeStamp_FirstFrame</td>
+<td>TimeStamp fixed in the stream (relative) IN MS</td>
+</tr>
+<tr class="odd">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp with measurement</td>
+</tr>
+<tr class="even">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp with measurement</td>
+</tr>
+<tr class="odd">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp with measurement</td>
+</tr>
+<tr class="even">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>TimeStamp_FirstFrame/Stri</td>
+<td>TimeStamp in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>TimeCode_FirstFrame</td>
+<td>Time code in HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available format</td>
+</tr>
+<tr class="even">
+<td>TimeCode_Settings</td>
+<td>Time code settings</td>
+</tr>
+<tr class="odd">
+<td>TimeCode_Striped</td>
+<td>Time code is striped (only 1st time code, no discontinuity)</td>
+</tr>
+<tr class="even">
+<td>TimeCode_Striped/String</td>
+<td>Time code is striped (only 1st time code, no discontinuity)</td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>Name of this menu</td>
+</tr>
+<tr class="even">
+<td>Language</td>
+<td>Language (2-letter ISO 639-1 if exists, else 3-letter ISO 639-2, and with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn)</td>
+</tr>
+<tr class="odd">
+<td>Language/String</td>
+<td>Language (full)</td>
+</tr>
+<tr class="even">
+<td>Language/String1</td>
+<td>Language (full)</td>
+</tr>
+<tr class="odd">
+<td>Language/String2</td>
+<td>Language (2-letter ISO 639-1 if exists, else empty)</td>
+</tr>
+<tr class="even">
+<td>Language/String3</td>
+<td>Language (3-letter ISO 639-2 if exists, else empty)</td>
+</tr>
+<tr class="odd">
+<td>Language/String4</td>
+<td>Language (2-letter ISO 639-1 if exists with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn, else empty)</td>
+</tr>
+<tr class="even">
+<td>Language_More</td>
+<td>More info about Language (e.g. Director's Comment)</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="image">Image</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Count</td>
+<td>Count of objects available in this stream</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>bit field (0=IsAccepted, 1=IsFilled, 2=IsUpdated, 3=IsFinished)</td>
+</tr>
+<tr class="odd">
+<td>StreamCountStream type names of that kind available</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamKind</td>
+<td>Stream Stream type name</td>
+</tr>
+<tr class="odd">
+<td>StreamKind/StNumber of the stream (base=0)</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamKindID</td>
+<td>WWhen multiple streams, number of the stream (base=1)</td>
+</tr>
+<tr class="odd">
+<td>StreamKindPoStream order in the file, whatever is the kind of stream (base=0)s</td>
+<td>Stream order in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="even">
+<td>StreamOrder</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>FirstPacketOrder</td>
+<td>Order of the first fully decodable packet met in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="even">
+<td>Inform</td>
+<td>Last **Inform** call</td>
+</tr>
+<tr class="odd">
+<td>ID</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>ID/String</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>UniqueID</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="even">
+<td>UniqueID/String</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="odd">
+<td>MenuID</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>MenuID/String</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>Name of the track</td>
+</tr>
+<tr class="even">
+<td>Format</td>
+<td>Format used</td>
+</tr>
+<tr class="odd">
+<td>Format/Info</td>
+<td>Info about Format</td>
+</tr>
+<tr class="even">
+<td>Format/Url</td>
+<td>Link</td>
+</tr>
+<tr class="odd">
+<td>Format_Commercial</td>
+<td>Commercial name used by vendor for theses setings or Format field if there is no difference</td>
+</tr>
+<tr class="even">
+<td>Format_Commercial_IfAny</td>
+<td>Commercial name used by vendor for theses setings if there is one</td>
+</tr>
+<tr class="odd">
+<td>Format_Version</td>
+<td>Version of this format</td>
+</tr>
+<tr class="even">
+<td>Format_Profile</td>
+<td>Profile of the Format</td>
+</tr>
+<tr class="odd">
+<td>Format_Compression</td>
+<td>Compression mode of the Format</td>
+</tr>
+<tr class="even">
+<td>Format_Settings</td>
+<td>Settings needed for decoder used</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings_Wrapping</td>
+<td>Wrapping mode (Frame wrapped or Clip wrapped)</td>
+</tr>
+<tr class="even">
+<td>InternetMediaType</td>
+<td>Internet Media Type (aka MIME Type, Content-Type)</td>
+</tr>
+<tr class="odd">
+<td>CodecID</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="even">
+<td>CodecID/String</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="odd">
+<td>CodecID/Info</td>
+<td>Info about codec ID</td>
+</tr>
+<tr class="even">
+<td>CodecID/Hint</td>
+<td>A hint for this codec ID</td>
+</tr>
+<tr class="odd">
+<td>CodecID/Url</td>
+<td>A link for more details about this codec ID</td>
+</tr>
+<tr class="even">
+<td>CodecID_Description</td>
+<td>Manual description given by the container</td>
+</tr>
+<tr class="odd">
+<td>Codec</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec/Family</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Codec/Info</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Codec/Url</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>Width</td>
+<td>Width (aperture size if present) in pixel</td>
+</tr>
+<tr class="odd">
+<td>Width/String</td>
+<td>Width (aperture size if present) with measurement (pixel)</td>
+</tr>
+<tr class="even">
+<td>Width_Offset</td>
+<td>Offset between original width and displayed width (aperture size) in pixel</td>
+</tr>
+<tr class="odd">
+<td>Width_Offset/String</td>
+<td>Offset between original width and displayed width (aperture size)  in pixel</td>
+</tr>
+<tr class="even">
+<td>Width_Original</td>
+<td>Original (in the raw stream) width in pixel</td>
+</tr>
+<tr class="odd">
+<td>Width_Original/String</td>
+<td>Original (in the raw stream) width with measurement (pixel)</td>
+</tr>
+<tr class="even">
+<td>Height</td>
+<td>Height (aperture size if present) in pixel</td>
+</tr>
+<tr class="odd">
+<td>Height/String</td>
+<td>Height (aperture size if present) with measurement (pixel)</td>
+</tr>
+<tr class="even">
+<td>Height_Offset</td>
+<td>Offset between original height and displayed height (aperture size) in pixel</td>
+</tr>
+<tr class="odd">
+<td>Height_Offset/String</td>
+<td>Offset between original height and displayed height (aperture size)  in pixel</td>
+</tr>
+<tr class="even">
+<td>Height_Original</td>
+<td>Original (in the raw stream) height in pixel</td>
+</tr>
+<tr class="odd">
+<td>Height_Original/String</td>
+<td>Original (in the raw stream) height with measurement (pixel)</td>
+</tr>
+<tr class="even">
+<td>PixelAspectRatio</td>
+<td>Pixel Aspect ratio</td>
+</tr>
+<tr class="odd">
+<td>PixelAspectRatio/String</td>
+<td>Pixel Aspect ratio</td>
+</tr>
+<tr class="even">
+<td>PixelAspectRatio_Original</td>
+<td>Original (in the raw stream) Pixel Aspect ratio</td>
+</tr>
+<tr class="odd">
+<td>PixelAspectRatio_Original</td>
+<td>Original (in the raw stream) Pixel Aspect ratio</td>
+</tr>
+<tr class="even">
+<td>DisplayAspectRatio</td>
+<td>Display Aspect ratio</td>
+</tr>
+<tr class="odd">
+<td>DisplayAspectRatio/String</td>
+<td>Display Aspect ratio</td>
+</tr>
+<tr class="even">
+<td>DisplayAspectRatio_Origin</td>
+<td>Original (in the raw stream) Display Aspect ratio</td>
+</tr>
+<tr class="odd">
+<td>DisplayAspectRatio_Origin</td>
+<td>Original (in the raw stream) Display Aspect ratio</td>
+</tr>
+<tr class="even">
+<td>ColorSpace</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ChromaSubsampling</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Resolution</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="odd">
+<td>Resolution/String</td>
+<td>Deprecated, do not use in new projects</td>
+</tr>
+<tr class="even">
+<td>BitDepth</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>BitDepth/String</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Compression_Mode</td>
+<td>Compression mode (Lossy or Lossless)</td>
+</tr>
+<tr class="odd">
+<td>Compression_Mode/String</td>
+<td>Compression mode (Lossy or Lossless)</td>
+</tr>
+<tr class="even">
+<td>Compression_Ratio</td>
+<td>Current stream size divided by uncompressed stream size</td>
+</tr>
+<tr class="odd">
+<td>StreamSize</td>
+<td>Stream size in bytes</td>
+</tr>
+<tr class="even">
+<td>StreamSize/String</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String1</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize/String2</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String3</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>StreamSize/String4</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>StreamSize/String5</td>
+<td>With proportion</td>
+</tr>
+<tr class="even">
+<td>StreamSize_Proportion</td>
+<td>Stream size divided by file size</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library</td>
+<td>Software used to create the file</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library/String</td>
+<td>Software used to create the file</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_Name</td>
+<td>Info from the software</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_Version</td>
+<td>Version of software</td>
+</tr>
+<tr class="odd">
+<td>Encoded_Library_Date</td>
+<td>Release date of software</td>
+</tr>
+<tr class="even">
+<td>Encoded_Library_Settings</td>
+<td>Parameters used by the software</td>
+</tr>
+<tr class="odd">
+<td>Language</td>
+<td>Language (2-letter ISO 639-1 if exists, else 3-letter ISO 639-2, and with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn)</td>
+</tr>
+<tr class="even">
+<td>Language/String</td>
+<td>Language (full)</td>
+</tr>
+<tr class="odd">
+<td>Language/String1</td>
+<td>Language (full)</td>
+</tr>
+<tr class="even">
+<td>Language/String2</td>
+<td>Language (2-letter ISO 639-1 if exists, else empty)</td>
+</tr>
+<tr class="odd">
+<td>Language/String3</td>
+<td>Language (3-letter ISO 639-2 if exists, else empty)</td>
+</tr>
+<tr class="even">
+<td>Language/String4</td>
+<td>Language (2-letter ISO 639-1 if exists with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn, else empty)</td>
+</tr>
+<tr class="odd">
+<td>Language_More</td>
+<td>More info about Language (e.g. Director's Comment)</td>
+</tr>
+<tr class="even">
+<td>Default</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="odd">
+<td>Default/String</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="even">
+<td>Forced</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="odd">
+<td>Forced/String</td>
+<td>Set if that track should be used if no language found matches the user preference.</td>
+</tr>
+<tr class="even">
+<td>Summary</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Encoded_Date</td>
+<td>The time that the encoding of this item was completed began.</td>
+</tr>
+<tr class="even">
+<td>Tagged_Dat</td>
+<td>The time that the tags were done for this item.</td>
+</tr>
+<tr class="odd">
+<td>Encryption</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>colour_description_presen</td>
+<td>Presence of colour description</td>
+</tr>
+<tr class="odd">
+<td>colour_primaries</td>
+<td>Chromaticity coordinates of the source primaries</td>
+</tr>
+<tr class="even">
+<td>transfer_characteristics</td>
+<td>Opto-electronic transfer characteristic of the source picture</td>
+</tr>
+<tr class="odd">
+<td>matrix_coefficients</td>
+<td>Matrix coefficients used in deriving luma and chroma signals from the green, blue, and red primaries</td>
+</tr>
+<tr class="even">
+<td>colour_description_presen</td>
+<td>Presence of colour description</td>
+</tr>
+<tr class="odd">
+<td>colour_primaries_Original</td>
+<td>Chromaticity coordinates of the source primaries</td>
+</tr>
+<tr class="even">
+<td>transfer_characteristics_</td>
+<td>Opto-electronic transfer characteristic of the source picture</td>
+</tr>
+<tr class="odd">
+<td>matrix_coefficients_Origi</td>
+<td>Matrix coefficients used in deriving luma and chroma signals from the green, blue, and red primaries</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="menu">Menu</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td>Count</td>
+<td>Count of objects available in this stream</td>
+</tr>
+<tr class="even">
+<td>Status</td>
+<td>bit field (0=IsAccepted, 1=IsFilled, 2=IsUpdated, 3=IsFinished)</td>
+</tr>
+<tr class="odd">
+<td>StreamCount</td>
+<td>Count of streams of that kind available</td>
+</tr>
+<tr class="even">
+<td>StreamKind</td>
+<td>Stream type name</td>
+</tr>
+<tr class="odd">
+<td>StreamKind/String</td>
+<td>Stream type name</td>
+</tr>
+<tr class="even">
+<td>StreamKindID</td>
+<td>Number of the stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>StreamKindPos</td>
+<td>When multiple streams, number of the stream (base=1)</td>
+</tr>
+<tr class="even">
+<td>StreamOrder</td>
+<td>Stream order in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="odd">
+<td>FirstPacketOrder</td>
+<td>Order of the first fully decodable packet met in the file, whatever is the kind of stream (base=0)</td>
+</tr>
+<tr class="even">
+<td>Inform</td>
+<td>Last **Inform** call</td>
+</tr>
+<tr class="odd">
+<td>ID</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>ID/String</td>
+<td>The ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>UniqueID</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="even">
+<td>UniqueID/String</td>
+<td>The unique ID for this stream, should be copied with stream copy</td>
+</tr>
+<tr class="odd">
+<td>MenuID</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="even">
+<td>MenuID/String</td>
+<td>The menu ID for this stream in this file</td>
+</tr>
+<tr class="odd">
+<td>Format</td>
+<td>Format used</td>
+</tr>
+<tr class="even">
+<td>Format/Info</td>
+<td>Info about Format</td>
+</tr>
+<tr class="odd">
+<td>Format/Url</td>
+<td>Link</td>
+</tr>
+<tr class="even">
+<td>Format_Commercial</td>
+<td>Commercial name used by vendor for theses setings or Format field if there is no difference</td>
+</tr>
+<tr class="odd">
+<td>Format_Commercial_IfAny</td>
+<td>Commercial name used by vendor for theses setings if there is one</td>
+</tr>
+<tr class="even">
+<td>Format_Version</td>
+<td>Version of this format</td>
+</tr>
+<tr class="odd">
+<td>Format_Profile</td>
+<td>Profile of the Format</td>
+</tr>
+<tr class="even">
+<td>Format_Compression</td>
+<td>Compression method used</td>
+</tr>
+<tr class="odd">
+<td>Format_Settings</td>
+<td>Settings needed for decoder used</td>
+</tr>
+<tr class="even">
+<td>CodecID</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="odd">
+<td>CodecID/String</td>
+<td>Codec ID (found in some containers)</td>
+</tr>
+<tr class="even">
+<td>CodecID/Info</td>
+<td>Info about this codec</td>
+</tr>
+<tr class="odd">
+<td>CodecID/Hint</td>
+<td>A hint/popular name for this codec</td>
+</tr>
+<tr class="even">
+<td>CodecID/Url</td>
+<td>A link to more details about this codec ID</td>
+</tr>
+<tr class="odd">
+<td>CodecID_Description</td>
+<td>Manual description given by the container</td>
+</tr>
+<tr class="even">
+<td>Codec</td>
+<td>Deprecated</td>
+</tr>
+<tr class="odd">
+<td>Codec/String</td>
+<td>Deprecated</td>
+</tr>
+<tr class="even">
+<td>Codec/Info</td>
+<td>Deprecated</td>
+</tr>
+<tr class="odd">
+<td>Codec/Url</td>
+<td>Deprecated</td>
+</tr>
+<tr class="even">
+<td>Duration</td>
+<td>Play time of the stream in ms</td>
+</tr>
+<tr class="odd">
+<td>Duration/String</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration/String1</td>
+<td>Play time in format : HHh MMmn SSs MMMms, XX omited if zero</td>
+</tr>
+<tr class="odd">
+<td>Duration/String2</td>
+<td>Play time in format : XXx YYy only, YYy omited if zero</td>
+</tr>
+<tr class="even">
+<td>Duration/String3</td>
+<td>Play time in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="odd">
+<td>Duration/String4</td>
+<td>Play time in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="even">
+<td>Duration/String5</td>
+<td>Play time in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="odd">
+<td>Duration_Start</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Duration_End</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Delay</td>
+<td>Delay fixed in the stream (relative) IN MS</td>
+</tr>
+<tr class="even">
+<td>Delay/String</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay/String1</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="even">
+<td>Delay/String2</td>
+<td>Delay with measurement</td>
+</tr>
+<tr class="odd">
+<td>Delay/String3</td>
+<td>Delay in format : HH:MM:SS.MMM</td>
+</tr>
+<tr class="even">
+<td>Delay/String4</td>
+<td>Delay in format : HH:MM:SS:FF, last colon replaced by semicolon for drop frame if available</td>
+</tr>
+<tr class="odd">
+<td>Delay/String5</td>
+<td>Delay in format : HH:MM:SS.mmm (HH:MM:SS:FF)</td>
+</tr>
+<tr class="even">
+<td>Delay_Settings</td>
+<td>Delay settings (in case of timecode for example)</td>
+</tr>
+<tr class="odd">
+<td>Delay_DropFrame</td>
+<td>Delay drop frame</td>
+</tr>
+<tr class="even">
+<td>Delay_Source</td>
+<td>Delay source (Container or Stream or empty)</td>
+</tr>
+<tr class="odd">
+<td>List_StreamKind</td>
+<td>List of programs available</td>
+</tr>
+<tr class="even">
+<td>List_StreamPos</td>
+<td>List of programs available</td>
+</tr>
+<tr class="odd">
+<td>List</td>
+<td>List of programs available</td>
+</tr>
+<tr class="even">
+<td>List/String</td>
+<td>List of programs available</td>
+</tr>
+<tr class="odd">
+<td>Title</td>
+<td>Name of this menu</td>
+</tr>
+<tr class="even">
+<td>Language</td>
+<td>Language (2-letter ISO 639-1 if exists, else 3-letter ISO 639-2, and with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn)</td>
+</tr>
+<tr class="odd">
+<td>Language/String</td>
+<td>Language (full)</td>
+</tr>
+<tr class="even">
+<td>Language/String1</td>
+<td>Language (full)</td>
+</tr>
+<tr class="odd">
+<td>Language/String2</td>
+<td>Language (2-letter ISO 639-1 if exists, else empty)</td>
+</tr>
+<tr class="even">
+<td>Language/String3</td>
+<td>Language (3-letter ISO 639-2 if exists, else empty)</td>
+</tr>
+<tr class="odd">
+<td>Language/String4</td>
+<td>Language (2-letter ISO 639-1 if exists with optional ISO 3166-1 country separated by a dash if available, e.g. en, en-us, zh-cn, else empty)</td>
+</tr>
+<tr class="even">
+<td>Language_More</td>
+<td>More info about Language (e.g. Director's Comment)</td>
+</tr>
+<tr class="odd">
+<td>ServiceName</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ServiceChannel</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Service/Url</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ServiceProvider</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ServiceProviderr/Url</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ServiceType</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>NetworkName</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Original/NetworkName</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Countries</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>TimeZones</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>LawRating</td>
+<td>Depending on the country it's the format of the rating of a movie (P, R, X in the USA, an age in other countries or a URI defining a logo).</td>
+</tr>
+<tr class="even">
+<td>LawRating_Reason</td>
+<td>Reason for the law rating</td>
+</tr>
+<tr class="odd">
+<td>Chapters_Pos_Begin</td>
+<td>Used by third-party developers to know about the beginning of the chapters list, to be used by Get(Stream_Menu, x, Pos), where Pos is an Integer between Chapters_Pos_Begin and Chapters_Pos_End</td>
+</tr>
+<tr class="even">
+<td>Chapters_Pos_End</td>
+<td>Used by third-party developers to know about the end of the chapters list (this position excluded)</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</article>
+
+</body>
+</html>
