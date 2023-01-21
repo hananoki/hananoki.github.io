@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+</head>
+<title>hananoki.github.io</title>
+<link href="../img/favicon.webp" rel="icon" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Nanum+Gothic|Roboto" rel="stylesheet" />
+<link href="../css/side.css" rel="stylesheet">
+<link href="../css/markdown7_side.css" rel="stylesheet">
+
+<body>
+
+<article>
+<div class="side">
+<a href="index.html">デスクトップアプリ</a><br>
+<br>
+<a href="MO2IL.html">MO2IL</a><br>
+<a href="nkf-gui.html">nkf-gui</a><br>
+<a href="vcpkg-gui.html">vcpkg-gui</a><br>
+<a href="uecpptool.html">UECPPTool</a><br>
+<a href="Utotribyu.html">Utotribyu</a><br>
+<a href="xtFOJP.html">xtFOJP</a><br>
+<br>
+<a href="etc.html">その他</a><br>
+</div> 
+<div class="content">
+<h1 id="mo2il">MO2IL</h1>
+<p>MO2の管理をベースに各種ツールでいろいろ編集したりするツール</p>
+<ul>
+<li><a href="#機能">機能</a></li>
+<li><a href="#ダウンロード">ダウンロード</a></li>
+<li><a href="#リポジトリ">リポジトリ</a></li>
+</ul>
+<p><img src="img/MO2IL.webp" /></p>
+<h2 id="機能">機能</h2>
+<h3
+id="ツールを登録して拡張子別にファイルと関連付けして起動させる機能">ツールを登録して拡張子別にファイルと関連付けして起動させる機能</h3>
+<h3 id="競合ファイルを探す機能">競合ファイルを探す機能</h3>
+<h3 id="ファイル検索機能">ファイル検索機能</h3>
+<h3 id="ファイルマージ機能">ファイルマージ機能</h3>
+<ul>
+<li><code>merge.txt</code>を準備する</li>
+</ul>
+<p><img src="img/MO2IL_01.webp" /></p>
+<ul>
+<li><code>merge.txt</code>に結合したいMODを記述する<br />
+(下に書いたMODが優先高い)</li>
+</ul>
+<p><img src="img/MO2IL_02.webp" /></p>
+<ul>
+<li>「ファイルマージ」からボタンを押せば出来上がり<br />
+(<code>merge.txt</code>が置かれた場所にファイルコピーされます)</li>
+</ul>
+<p><img src="img/MO2IL_03.webp" /></p>
+<h3 id="ビルド機能">ビルド機能</h3>
+<p><font color="Red"><strong>※スカイリムでしかテスト確認していません</strong></font></p>
+<ul>
+<li>CreationKitの設定を行う
+<ul>
+<li>Papyrusを使う場合はインポートパスの設定も忘れずに</li>
+</ul></li>
+<li><code>build.csv</code>を準備する</li>
+</ul>
+<p><img src="img/MO2IL_04.webp" /></p>
+<ul>
+<li><code>build.csv</code>で「出力パス」「説明」「入力パス」を記述する<br />
+</li>
+<li>フォーマットはタブでセパレートしたテキスト</li>
+</ul>
+<p><img src="img/MO2IL_05.webp" /></p>
+<ul>
+<li>ボタンを押せば出来上がり</li>
+</ul>
+<p><img src="img/MO2IL_06.webp" /></p>
+<h4 id="ビルド出来るもの">ビルド出来るもの</h4>
+<ul>
+<li>wav -&gt; xwm
+<ul>
+<li>xWMAEncodeを使用して変換します</li>
+</ul></li>
+<li>psc -&gt; pex
+<ul>
+<li>Papyrus Compilerでコンパイルします</li>
+</ul></li>
+</ul>
+<h3 id="fojp用の機能">FOJP用の機能</h3>
+<ul>
+<li>xtFOJPから移植してきた機能</li>
+<li>既存テキストからXML変換機能は未実装</li>
+</ul>
+<h2 id="ダウンロード">ダウンロード</h2>
+<p><a href="../arcive/MO2IL_rev33.7z">MO2IL_rev33.7z</a></p>
+<h2 id="リポジトリ">リポジトリ</h2>
+<p><a
+href="https://github.com/hananoki/MO2IL">https://github.com/hananoki/MO2IL</a></p>
+<hr />
+<p><a href="index.html">戻る</a></p>
+
+</div>
+</article>
+
+</body>
+</html>
