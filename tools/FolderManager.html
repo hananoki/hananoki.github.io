@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+</head>
+<title>hananoki.github.io</title>
+<link href="../img/favicon.webp" rel="icon" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Nanum+Gothic|Roboto" rel="stylesheet" />
+<link href="../css/side.css" rel="stylesheet">
+<link href="../css/markdown7_side.css" rel="stylesheet">
+
+<body>
+
+<article>
+<div class="side">
+<a href="index.html">デスクトップアプリ</a><br>
+<br>
+<a href="FolderManager.html">FolderManager</a><br>
+<a href="MO2IL.html">MO2IL</a><br>
+<a href="nkf-gui.html">nkf-gui</a><br>
+<a href="vcpkg-gui.html">vcpkg-gui</a><br>
+<a href="uecpptool.html">UECPPTool</a><br>
+<a href="Utotribyu.html">Utotribyu</a><br>
+<a href="xtFOJP.html">xtFOJP</a><br>
+<br>
+<a href="etc.html">その他</a><br>
+</div> 
+<div class="content">
+<h1 id="foldermanager">FolderManager</h1>
+<p><strong>フォルダ容量を計算して表示するツール</strong></p>
+<ul>
+<li><a href="#特徴">特徴</a></li>
+<li><a href="#現状の問題点">現状の問題点</a></li>
+<li><a href="#ダウンロード">ダウンロード</a></li>
+<li><a href="#リポジトリ">リポジトリ</a></li>
+</ul>
+<p><img src="img/FolderManager.webp" /></p>
+<h2 id="特徴">特徴</h2>
+<ul>
+<li>シンボリックリンク、ジャンクションを考慮したサイズ計算
+<ul>
+<li>エクスプローラで右クリック、プロパティで見えるサイズと同じくらい</li>
+</ul></li>
+<li>シンボリックリンク、ジャンクションを一覧表示</li>
+</ul>
+<h2 id="現状の問題点">現状の問題点</h2>
+<ul>
+<li>未実装箇所がそこそこある
+<ul>
+<li>コンテキストメニュー等、あると便利なものはもう少し仕様が固まってからの予定</li>
+</ul></li>
+<li>ジャンクションのターゲットが不明
+<ul>
+<li>Qt5.15の段階では取得出来ない
+<ul>
+<li>「Qt6に更新」or 「APIを叩く」のどちらか</li>
+</ul></li>
+</ul></li>
+<li>アイコンの取得に時間が掛かる場合がある
+<ul>
+<li>数百メガのexeとかリソースが大きいとそうなる
+<ul>
+<li>スレッドで分離する</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="ダウンロード">ダウンロード</h2>
+<p><a
+href="../arcive/FolderManager_rev2.7z">FolderManager_rev2.7z</a></p>
+<h2 id="リポジトリ">リポジトリ</h2>
+<p><a
+href="https://github.com/hananoki/FolderManager">https://github.com/hananoki/FolderManager</a></p>
+<hr />
+<p><a href="index.html">戻る</a></p>
+
+</div>
+</article>
+
+</body>
+</html>
