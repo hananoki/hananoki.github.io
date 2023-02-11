@@ -30,7 +30,8 @@
 <p><strong>フォルダ容量を計算して表示するツール</strong></p>
 <ul>
 <li><a href="#特徴">特徴</a></li>
-<li><a href="#現状の問題点">現状の問題点</a></li>
+<li><a href="#今後ほしい機能">今後ほしい機能</a></li>
+<li><a href="#検知のバグ">検知のバグ</a></li>
 <li><a href="#変更履歴">変更履歴</a></li>
 <li><a href="#ダウンロード">ダウンロード</a></li>
 <li><a href="#リポジトリ">リポジトリ</a></li>
@@ -44,37 +45,51 @@
 </ul></li>
 <li>シンボリックリンク、ジャンクションを一覧表示</li>
 </ul>
-<h2 id="現状の問題点">現状の問題点</h2>
+<h2 id="今後ほしい機能">今後ほしい機能</h2>
 <ul>
-<li>未実装箇所がそこそこある
+<li>エクスプローラ等で変更が入った場合に反応するようにしたい
 <ul>
-<li>コンテキストメニュー等、あると便利なものはもう少し仕様が固まってからの予定</li>
+<li><code>FindFirstChangeNotification</code></li>
+<li><code>ReadDirectoryChangesW</code></li>
 </ul></li>
-<li><del>ジャンクションのターゲットが不明</del>
+<li>環境変数の表示
 <ul>
-<li><del>Qt5.15の段階では取得出来ない</del>
-<ul>
-<li><del>「Qt6に更新」or 「APIを叩く」のどちらか</del></li>
-</ul></li>
-</ul></li>
-<li>アイコンの取得に時間が掛かる場合がある
-<ul>
-<li>数百メガのexeとかリソースが大きいとそうなる
-<ul>
-<li>スレッドで分離する</li>
-</ul></li>
+<li>Pathとか表示して該当場所に飛べると楽かもしれない</li>
 </ul></li>
 </ul>
+<h2 id="検知のバグ">検知のバグ</h2>
+<ul>
+<li>キャッシュデータがある状態で容量計算した場合、サイズ表示に反映されない
+<ul>
+<li>表示の問題で再起動するキャッシュデータが反映される</li>
+</ul></li>
+<li>更新日時でソート出来ない</li>
+</ul>
 <h2 id="変更履歴">変更履歴</h2>
-<h3 id="rev.9---2023-02-04">[rev.9] - 2023-02-04</h3>
+<h3 id="rev.16---2023-02-11">[rev.16] - 2023-02-11</h3>
 <h4 id="added">Added</h4>
+<ul>
+<li>コンテキストメニューの追加と実装</li>
+<li>シンボリックリンク先からシンボリックリンク元を追跡するボタンを追加</li>
+</ul>
+<h4 id="changed">Changed</h4>
+<ul>
+<li>列挙処理をマルチスレッド化</li>
+<li>ツリーアイテムのキャッシュ化</li>
+</ul>
+<h4 id="fixed">Fixed</h4>
+<ul>
+<li>HLogViewのフリーズを修正</li>
+</ul>
+<h3 id="rev.9---2023-02-04">[rev.9] - 2023-02-04</h3>
+<h4 id="added-1">Added</h4>
 <ul>
 <li>SendTo内のショートカットをコンテキストメニューに展開するようにした</li>
 <li>削除を使えるようにした</li>
 <li>指定したフォルダ以下の容量計算を可能にした</li>
 <li>上のフォルダに行けるようにした</li>
 </ul>
-<h4 id="changed">Changed</h4>
+<h4 id="changed-1">Changed</h4>
 <ul>
 <li>UIをありがちな感じにした</li>
 <li>シンボリックリンク等、ダブルクリックしたらそこにフォーカスするようにした</li>
@@ -89,12 +104,15 @@
 </ul>
 <h2 id="ダウンロード">ダウンロード</h2>
 <ul>
-<li><p>今回のバージョンは<font color=red>Trojan:Script/Wacatac.H!ml</font>が検出される可能性があります</p></li>
-<li><p><a
-href="https://www.google.com/search?q=trojan%3Ascript%2Fwacatac.H!ml&amp;ie=UTF-8">https://www.google.com/search?q=trojan%3Ascript%2Fwacatac.H!ml&amp;ie=UTF-8</a></p></li>
+<li><font color=red>Trojan:Script/Wacatac.H!ml</font>が検出される可能性があります
+<ul>
+<li><a
+href="https://www.google.com/search?q=trojan%3Ascript%2Fwacatac.H!ml&amp;ie=UTF-8">https://www.google.com/search?q=trojan%3Ascript%2Fwacatac.H!ml&amp;ie=UTF-8</a></li>
+<li>誤判定だと思われますが、こちらでは対応しようがないので各自でご判断ください</li>
+</ul></li>
 </ul>
 <p><a
-href="../arcive/FolderManager_rev10.7z">FolderManager_rev10.7z</a></p>
+href="../arcive/FolderManager_rev16.7z">FolderManager_rev16.7z</a></p>
 <h2 id="リポジトリ">リポジトリ</h2>
 <p><a
 href="https://github.com/hananoki/FolderManager">https://github.com/hananoki/FolderManager</a></p>
